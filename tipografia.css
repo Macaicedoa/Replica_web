@@ -1,7 +1,12 @@
+:root{
+  --nintendo-font:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
 body{
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--nintendo-font);
   color: rgb(72, 72, 72);
 }
+
 .titulo {
   font-size: 1.75rem;
   font-weight: 700;

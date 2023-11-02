@@ -1,3 +1,7 @@
+body{
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(72, 72, 72);
+}
 .titulo {
   font-size: 1.75rem;
   font-weight: 700;

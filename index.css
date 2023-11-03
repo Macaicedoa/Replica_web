@@ -25,7 +25,6 @@
 .glider-prev:hover,
 .glider-next:hover {
   background-color: rgba(102, 102, 102, 0.6); /* Fondo ligeramente menos transparente al pasar el ratón */
-  transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
   position: absolute;
   top: 40%; /* Coloca los botones en la mitad superior de la imagen */
   transform: translateY(-50%); /* Alinea verticalmente los botones en el centro */
@@ -35,6 +34,8 @@
 }
 
 .glider img {
-  max-width: 200px; /* Tamaño máximo para las imágenes */
+  min-width: 150px; /* Ancho mínimo para las imágenes */
+  max-width: 150px; /* Tamaño máximo para las imágenes */
   height: auto; /* Mantiene la relación de aspecto */
 }
+

@@ -7,7 +7,34 @@
   background-color: var(--rojo-nintendo);
 }
 
+.glider-prev,
+.glider-next {
+  background-color: rgba(102, 102, 102, 0.4);
+  width: 50px;
+  height: 200px;
+  /* Centra horizontalmente los botones con respecto a las imágenes */
+  position: absolute;
+  top: 40%; /* Coloca los botones en la mitad superior de la imagen */
+  transform: translateY(-50%); /* Alinea verticalmente los botones en el centro */
+  /* Agrega espacio alrededor de los botones */
+  padding: 5px;
+  border-radius: 6px;
+}
 
+/* Estilo para .glider-prev y .glider-next cuando se pasa el ratón por encima */
+.glider-prev:hover,
+.glider-next:hover {
+  background-color: rgba(102, 102, 102, 0.6); /* Fondo ligeramente menos transparente al pasar el ratón */
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+  position: absolute;
+  top: 40%; /* Coloca los botones en la mitad superior de la imagen */
+  transform: translateY(-50%); /* Alinea verticalmente los botones en el centro */
+  /* Agrega espacio alrededor de los botones */
+  padding: 5px;
+  border-radius: 6px;
+}
 
-
-
+.glider img {
+  max-width: 200px; /* Tamaño máximo para las imágenes */
+  height: auto; /* Mantiene la relación de aspecto */
+}

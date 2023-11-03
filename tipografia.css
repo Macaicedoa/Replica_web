@@ -1,11 +1,36 @@
 :root{
   --nintendo-font:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   --color-font: rgb(72, 72, 72);
+  --font-weight-nintendo: 700;
+  --font-size-text: font-size: 0.875rem;
 }
 
 body{
   font-family: var(--nintendo-font);
   color: var(--color-font);
+}
+
+.link{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+svg{
+  fill: var(--color-font);
+}
+
+.search-form input{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+}
+
+.search-form select option{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
 }
 
 .titulo {

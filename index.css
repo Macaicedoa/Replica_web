@@ -1,10 +1,95 @@
 :root{
   --rojo-nintendo: rgb(230,0,18);
+  --gris-linea-separacion: solid 1px rgb(218,218,218);
+  --icons-width: 18px;
+  --icons-height: 18px;
 }
+
 body {
   margin: 0 0;
   padding: 0 0;
 }
-.home{
+
+header{
+  position: sticky;
+  border-bottom: var(--gris-linea-separacion);
+}
+
+.navbar{
+  margin: 0;
+  display: flex;
+  width: 100%;
+  position: relative;
+  left: 0;
+  z-index: 0;
+}
+
+.home-link{
   background-color: var(--rojo-nintendo);
+  position: relative;
+  width: 105px;
+  height: 50px;
+  padding: 10px 10px;
+  margin: 0 0;
+  align-items: center;
+}
+
+.home-link img{
+  margin: auto;
+  width: 105px;
+  height: 50px;
+}
+
+.search-form{
+  margin: 10px 10px;
+  display: inline-flex;
+  align-items: center;
+  border-bottom: solid 1px rgb(72, 72, 72);
+}
+
+.search-form img{
+  width: var(--icons-height);
+  height: var(--icons-height);
+}
+
+.search-form input{
+  border: none;
+}
+
+.search-form select{
+  border: none;
+  margin: 10px 0px;
+  padding: 2px;
+}
+
+.nav-links{
+  display: inline-flex;
+  position: fixed;
+  right: 0;
+}
+
+.nav-links li{
+  list-style-type: none;
+  margin: 10px 10px;
+}
+
+.link{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.link:hover{
+  color: var(--rojo-nintendo);
+  fill: var(--rojo-nintendo);
+}
+
+.icono{
+  margin: 4px;
+  width: var(--icons-width);
+  height: var(--icons-height);
+}
+
+svg:hover{
+  fill: var(--rojo-nintendo);
 }

@@ -41,7 +41,8 @@ header{
 }
 
 .search-form{
-  margin: 10px 10px;
+  margin: auto 2rem auto 1rem;
+  height: 2.125rem;
   display: inline-flex;
   align-items: center;
   border-bottom: solid 1px rgb(72, 72, 72);

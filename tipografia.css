@@ -2,7 +2,7 @@
   --nintendo-font:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   --color-font: rgb(72, 72, 72);
   --font-weight-nintendo: 700;
-  --font-size-text: font-size: 0.875rem;
+  --font-size-text: 0.875rem;
 }
 
 body{

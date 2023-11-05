@@ -1,5 +1,5 @@
 new Glider(document.querySelector('.glider'), {
-  slidesToShow: 3, // Cantidad de diapositivas visibles
+  slidesToShow: 4, // Cantidad de diapositivas visibles
   slidesToScroll: 1, // Cantidad de diapositivas para desplazarse
   itemWidth: 300, // Ancho de cada diapositiva
   draggable: false, // Permitir arrastrar
@@ -10,9 +10,9 @@ new Glider(document.querySelector('.glider'), {
   },
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 760,
       settings: {
-        slidesToShow: 7,
+        slidesToShow: 10,
         slidesToScroll: 1
       }
     },

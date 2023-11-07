@@ -12,9 +12,11 @@ body {
 
 header{
   position: sticky;
-  border-bottom: var(--gris-linea-separacion);
 }
 
+#nav1{
+  height: 52px;
+}
 .navbar{
   margin: 0;
   display: flex;
@@ -22,26 +24,35 @@ header{
   position: relative;
   left: 0;
   z-index: 0;
+  border-bottom: var(--gris-linea-separacion);
+  align-items: center;
+}
+
+#nav-1{
+  height: 52px;
 }
 
 .home-link{
   background-color: var(--rojo-nintendo);
   position: relative;
   width: 105px;
-  height: 50px;
-  padding: 10px 10px;
+  height: 52px;
   margin: 0 0;
+  display: flex;
   align-items: center;
 }
 
-.home-link img{
+.home-link svg{
   margin: auto;
-  width: 105px;
-  height: 50px;
+  size: 69;
 }
 
 .search-form{
-  margin: 10px 10px;
+  margin: auto 2rem auto 1rem;
+  height: 2.125rem;
+  width: 100%;
+  max-width: 28.125rem;
+  justify-content: space-between;
   display: inline-flex;
   align-items: center;
   border-bottom: solid 1px rgb(72, 72, 72);
@@ -50,10 +61,13 @@ header{
 .search-form img{
   width: var(--icons-height);
   height: var(--icons-height);
+  flex: 0;
+  margin: auto 5px auto 0px
 }
 
 .search-form input{
   border: none;
+  flex: 1;
 }
 
 .search-form select{
@@ -71,6 +85,8 @@ header{
 .nav-links li{
   list-style-type: none;
   margin: 10px 10px;
+  align-items: center;
+  display: flex;
 }
 
 .link{
@@ -85,7 +101,7 @@ header{
 }
 
 .icono{
-  margin: 4px;
+  margin: auto 5px;
   width: var(--icons-width);
   height: var(--icons-height);
 }
@@ -93,3 +109,32 @@ header{
 svg:hover{
   fill: var(--rojo-nintendo);
 }
+
+.flag{
+  margin: auto;
+}
+
+#nav-2{
+  align-content: center;
+  justify-content: center;
+}
+
+.nav-buttons{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 44px;
+}
+
+.nav-buttons button{
+  background-color: transparent;
+  border:none;
+  display:inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.d-arrow{
+  margin: auto 5px;
+}
+

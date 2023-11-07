@@ -58,6 +58,29 @@ svg{
   font-size: var(--font-size-text);
 }
 
+.link{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+svg{
+  fill: var(--color-font);
+}
+
+.search-form input{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+}
+
+.search-form select option{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
 .titulo {
   font-size: 1.75rem;
   font-weight: var(--font-weight-nintendo);

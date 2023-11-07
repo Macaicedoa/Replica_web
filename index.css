@@ -8,6 +8,8 @@
 body {
   margin: 0 0;
   padding: 0 0;
+  width: 100%;
+  height: 100vh;
 }
 
 header{
@@ -21,7 +23,6 @@ header{
   margin: 0;
   display: flex;
   width: 100%;
-  position: relative;
   left: 0;
   z-index: 0;
   border-bottom: var(--gris-linea-separacion);
@@ -48,7 +49,7 @@ header{
 }
 
 .search-form{
-  margin: auto 2rem auto 1rem;
+  margin: auto 1rem auto 1rem;
   height: 2.125rem;
   width: 100%;
   max-width: 28.125rem;
@@ -58,33 +59,92 @@ header{
   border-bottom: solid 1px rgb(72, 72, 72);
 }
 
-.search-form img{
-  width: var(--icons-height);
-  height: var(--icons-height);
-  flex: 0;
-  margin: auto 5px auto 0px
+.search-form:hover{
+  border-bottom: solid 1px var(--rojo-nintendo);
 }
 
-.search-form input{
+.search-form input,input::placeholder{
   border: none;
   flex: 1;
+  outline: none;
+  line-height: 1.5;
 }
 
-.search-form select{
+.search-form:hover .icono{
+  fill: var(--rojo-nintendo);
+  transition: fill 200ms ease-in-out 25ms;
+}
+
+.search-form:hover input::placeholder{
+  color: var(--rojo-nintendo);
+  transition: color 200ms ease-in-out 25ms;
+}
+
+.select{
   border: none;
   margin: 10px 0px;
   padding: 2px;
+  width: 140px;
+}
+
+.select:hover .d-arrow{
+  fill: var(--rojo-nintendo);
+}
+
+.select:hover p{
+  color: var(--rojo-nintendo);
+}
+
+.select p{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 140px;
+}
+
+.options{
+  position: fixed;
+  margin-top: -6px;
+  background-color: rgb(255, 255, 255);
+  opacity: 1;
+  width: 140px;
+  z-index: 10000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px #88888870;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.options ul{
+  margin: 2px 0px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.options ul li{
+  margin: 0px;
+  list-style-type: none;
+  padding-inline-start: 0px;
+  padding: 5px 10px; 
+}
+
+.options ul li:hover{
+  background-color: rgba(218, 218, 218, 0.452); 
 }
 
 .nav-links{
   display: inline-flex;
   position: fixed;
   right: 0;
+  gap: 1.75rem;
+  justify-content: space-around;
+  padding: 0px 1.25rem;
 }
 
 .nav-links li{
   list-style-type: none;
-  margin: 10px 10px;
   align-items: center;
   display: flex;
 }
@@ -101,12 +161,12 @@ header{
 }
 
 .icono{
-  margin: auto 5px;
+  margin: 0 5px 0px 0;
   width: var(--icons-width);
   height: var(--icons-height);
 }
 
-svg:hover{
+.link:hover svg{
   fill: var(--rojo-nintendo);
 }
 
@@ -134,7 +194,17 @@ svg:hover{
   align-items: center;
   justify-content: space-evenly;
 }
+
 .d-arrow{
   margin: auto 5px;
 }
+
+.nav-buttons button:hover{
+  color: var(--rojo-nintendo);
+}
+.nav-buttons button:hover svg{
+  fill: var(--rojo-nintendo);
+}
+
+
 

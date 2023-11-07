@@ -113,3 +113,24 @@ svg:hover{
 .flag{
   margin: auto;
 }
+
+#nav-2{
+  align-content: center;
+  justify-content: center;
+}
+
+.nav-buttons{
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 44px;
+}
+
+.nav-buttons button{
+  background-color: transparent;
+  border:none;
+  display:inline-flex;
+  align-items: center;
+}
+

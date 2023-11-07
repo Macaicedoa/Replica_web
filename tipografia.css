@@ -1,5 +1,6 @@
 :root{
   --nintendo-font:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  /*--nintendo-font: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto;*/
   --color-font: rgb(72, 72, 72);
   --font-weight-nintendo: 700;
   --font-size-text: 0.875rem;
@@ -36,6 +37,13 @@ svg{
 .search-form select option{
   font-family: var(--nintendo-font);
   color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+.nav-buttons button{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
   font-weight: var(--font-weight-nintendo);
   font-size: var(--font-size-text);
 }

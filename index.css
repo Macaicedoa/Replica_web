@@ -132,5 +132,9 @@ svg:hover{
   border:none;
   display:inline-flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+.d-arrow{
+  margin: auto 5px;
 }
 

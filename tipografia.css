@@ -1,13 +1,55 @@
+@font-face {
+  font-family: "museo-sans";
+  src: url(museo-sans/MuseoSans_700.ttf);
+}
+
 :root{
-  --nintendo-font:museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  --nintendo-font:"museo-sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --color-font: rgb(72, 72, 72);
   --font-weight-nintendo: 700;
-  --font-size-text: font-size: 0.875rem;
+  --font-size-text: 0.875rem;
+  --line-text: 1.4;
 }
 
 body{
   font-family: var(--nintendo-font);
   color: var(--color-font);
+  line-height: var(--line-text);
+}
+
+.link{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+svg{
+  fill: var(--color-font);
+}
+
+.search-form input{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-size: var(--font-size-text);
+}
+
+.search-form select{
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+.search-form select option{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+.nav-buttons button{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
 }
 
 .link{
@@ -35,7 +77,7 @@ svg{
 
 .titulo {
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-nintendo);
   margin-block: 0px;
   line-height: 1.35;
 }

@@ -1,27 +1,31 @@
-new Glider(document.querySelector('.glider'), {
-  slidesToShow: 4, // Cantidad de diapositivas visibles
-  slidesToScroll: 1, // Cantidad de diapositivas para desplazarse
-  itemWidth: 300, // Ancho de cada diapositiva
-  draggable: false, // Permitir arrastrar
-  dots: '', // Selector de puntos
-  arrows: {
-    prev: '.glider-prev',
-    next: '.glider-next'
-  },
-  responsive: [
-    {
-      breakpoint: 760,
-      settings: {
-        slidesToShow: 10,
-        slidesToScroll: 1
+document.addEventListener('DOMContentLoaded', function () {
+    const glider = new Glider(document.querySelector('.glider'), {
+      slidesToShow: 10,
+      slidesToScroll: 3,
+      draggable: false,
+      dots: '',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
       }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+    });
+    
+    
+  
+    glider.scroll((currentSlide) => {
+      const prevButton = document.querySelector('.glider-prev');
+      const nextButton = document.querySelector('.glider-next');
+      if (currentSlide === 0) {
+        prevButton.disabled = "";
+      } else {
+        prevButton.disabled = false;
       }
-    }
-  ]
-});
+      if (currentSlide === glider.slides.length - 1) {
+        nextButton.disabled = true;
+      } else {
+        nextButton.disabled = false;
+      }
+    });glider.refresh(true);
+  });
+
+  

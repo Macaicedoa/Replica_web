@@ -351,16 +351,16 @@ header{
 .card:hover img{
   filter: brightness(.7); 
 }
+
+/*Footer*/
 .nintendo_banner{
-   background-color: #e60012;
+   background-color: var(--rojo-nintendo);
     display:grid;
     height: 125px;
     place-content: center;
     width: 100%;
     grid-template-columns: repeat(16, 90px);
-    grid-gap: 5px;
-    
-    
+    grid-gap: 5px; 
 }
 #nintendo_logo{
     grid-column: 1;
@@ -421,7 +421,6 @@ header{
     color:rgb(72,72,72);
     font-weight: bold;
     text-decoration: none;
-    font-family: "museo-sans";
     padding-left: 20px;
     line-height: 40px;
     font-size: large;
@@ -429,21 +428,20 @@ header{
 .headline:hover{
     text-decoration: underline;
     text-decoration-thickness: bold 0.4;
-    text-decoration-color: #e60012;
+    text-decoration-color: var(--rojo-nintendo);
 }
 .text{
-    color:#e60012;
+    color:var(--rojo-nintendo);
     text-decoration: none;
     font-size:105%;
     font-weight:bold;
-    font-family: "museo-sans";
     padding-left: 25px;
     line-height: 35px;
 }
 .text:hover{
     text-decoration: underline;
     text-decoration-thickness: bold;
-    text-decoration-color: #e60012;
+    text-decoration-color: var(--rojo-nintendo);
 }
 .esrb{
     grid-column: 6;

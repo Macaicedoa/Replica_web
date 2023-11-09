@@ -99,3 +99,11 @@ svg{
   font-weight: 700;
   margin: 1em 0px;
 }
+
+.headline{
+  font-family: inherit;
+}
+
+.text{
+  font-family: inherit;
+}

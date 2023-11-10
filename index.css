@@ -94,6 +94,7 @@ header{
   margin: 10px 0px;
   padding: 2px;
   width: 140px;
+  z-index:10000;
 }
 
 .select:hover .d-arrow{

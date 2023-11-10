@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const glider = new Glider(document.querySelector('.glider'), {
       slidesToShow: 10,
-      slidesToScroll: 3,
+      slidesToScroll: 5,
       draggable: false,
-      dots: '',
+      dots: '.dots',  // Corregir aquí
       arrows: {
         prev: '.glider-prev',
         next: '.glider-next'
@@ -15,16 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     glider.scroll((currentSlide) => {
       const prevButton = document.querySelector('.glider-prev');
       const nextButton = document.querySelector('.glider-next');
-      if (currentSlide === 0) {
-        prevButton.disabled = "";
-      } else {
-        prevButton.disabled = false;
-      }
-      if (currentSlide === glider.slides.length - 1) {
-        nextButton.disabled = true;
-      } else {
-        nextButton.disabled = false;
-      }
+      
     });glider.refresh(true);
   });
 

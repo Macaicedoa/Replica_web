@@ -21,4 +21,26 @@ selectOptions[0].addEventListener("click", function(e){
     }  
   });
 
+/*Rotación arrows */
+
+let navButtons = document.getElementsByClassName("nav-buttons");
+let buttons = navButtons[0].getElementsByTagName("button");
+
+for(i=0;i<buttons.length;i++){
+  buttons[i].addEventListener("click", function(e){
+    e.stopPropagation();
+    arrow = this.getElementsByClassName("d-arrow");
+    arrowStatus = getComputedStyle(arrow[0],null);
+    console.log(arrowStatus.transform);
+    if(arrowStatus.transform === 'none'){
+      arrow[0].style= "transform: rotate(180deg); transition-duration: 200ms;"
+    }else{
+      arrow[0].style= "transform: rotate(0deg); transition-duration: 200ms;"
+    }
+  });
+}
+
+
+
+
 

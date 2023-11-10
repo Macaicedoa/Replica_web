@@ -221,12 +221,11 @@ header{
 }
 
 .buttons-dropdown{
-  position: absolute;
-  top: 44px;
+  position: relative;
   left: 0px;
   width: 100%;
   z-index: 50;
-  height: 969px;
+  height: 0px;
 }
 
 /***************Section Featured******************/

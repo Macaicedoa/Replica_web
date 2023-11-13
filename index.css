@@ -395,34 +395,39 @@ header{
   margin: 0px auto;
 }
 
-.games-options-divs{
+.options-divs{
   display: flex;
   flex-direction: column;
   min-width: 7.5rem;
+  width: fit-content;
 }
 
-.games-options-links{
+.options-links{
   width: 120px;
   text-align: center;
   transition: all 200ms;
 }
 
-.games-options-links:hover{
+.options-links div img{
+  width: 120px;
+}
+
+.options-links:hover{
   color: var(--rojo-nintendo);
   border-color: var(--rojo-nintendo);
 }
 
-.games-options-links:hover div{
+.options-links:hover div{
   color: var(--rojo-nintendo);
   border-color: var(--rojo-nintendo);
   background-color: var(--rojo-nintendo);
 }
 
-.games-options-links:hover div svg{
+.options-links:hover div svg{
   fill: white;
 }
 
-.games-options-links div{
+.options-links div{
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -436,6 +441,55 @@ header{
   background-color: white;
   transition-property: background-color, border-color;
   transition-duration: 200ms;
+}
+
+.buttons-dropdown-switch{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.buttons-dropdown-switch button{
+  display: flex;
+  position: relative;
+  right: 0;
+  width: fit-content;
+  align-self: flex-end;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.buttons-dropdown-switch button svg{
+  fill: rgb(197, 196, 196)
+}
+
+.switch-options{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1440px;
+  min-width: calc(1025px - 2rem);
+  margin: 0px auto;
+}
+
+.switch-options div:first-child a{
+  width: 260px;
+}
+.switch-options div:first-child a div img{
+  width: 260px;
+}
+.switch-options div:nth-child(3) a div svg{
+  background-color: white;
+  fill: var(--rojo-nintendo);
 }
 
 .buttons-dropdown-overlay{

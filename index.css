@@ -379,7 +379,7 @@ header{
   padding-bottom: 0.25rem;
 }
 
-.buttons-dropdown-games button svg{
+.buttons-dropdown-games,.buttons-dropdown-switch,.buttons-dropdown-play button svg{
   fill: rgb(197, 196, 196)
 }
 
@@ -410,6 +410,10 @@ header{
 
 .options-links div img{
   width: 120px;
+}
+
+.options-links p{
+  margin: 0;
 }
 
 .options-links:hover{
@@ -450,6 +454,7 @@ header{
   height: fit-content;
   padding-top: 0.5rem;
   padding-bottom: 0.75rem;
+  display:none;
 }
 
 .buttons-dropdown-switch button{
@@ -463,10 +468,6 @@ header{
   border: none;
   padding-right: 1rem;
   padding-bottom: 0.25rem;
-}
-
-.buttons-dropdown-switch button svg{
-  fill: rgb(197, 196, 196)
 }
 
 .switch-options{
@@ -490,6 +491,40 @@ header{
 .switch-options div:nth-child(3) a div svg{
   background-color: white;
   fill: var(--rojo-nintendo);
+}
+
+.buttons-dropdown-play{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.buttons-dropdown-play button{
+  display: flex;
+  position: relative;
+  right: 0;
+  width: fit-content;
+  align-self: flex-end;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.play-options{
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1440px;
+  min-width: calc(1025px - 2rem);
+  margin: 0px auto;
 }
 
 .buttons-dropdown-overlay{

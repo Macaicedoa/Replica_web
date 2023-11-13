@@ -525,6 +525,7 @@ header{
   max-width: 1440px;
   min-width: calc(1025px - 2rem);
   margin: 0px auto;
+  display: none;
 }
 
 .buttons-dropdown-overlay{
@@ -536,6 +537,7 @@ header{
   opacity: 0.5;
   overflow-y: hidden;
   overflow: hidden;
+  display:none;
 }
 
 

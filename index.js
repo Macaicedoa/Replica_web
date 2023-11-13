@@ -1,30 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const glider = new Glider(document.querySelector('.glider'), {
-      slidesToShow: 10,
-      slidesToScroll: 5,
-      draggable: false,
-      dots: '.dot',  // Corregir aquí
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
+  var glide = new Glide('.glide', {
+    type: 'carousel',
+    perView: 9,
+    focusAt: 0,
+    bound: true,
+    breakpoints: {
+      1000: {
+        perView: 3
       },
-      itemWidth: 268,
-    });
-    
-    
-  
-    glider.on('glider-slide-hidden', (event, index) => {
-      const totalSlides = glider.slides.length;
-  
-      // Verifica si la siguiente diapositiva está fuera de la vista (última diapositiva)
-      if (index === totalSlides - 2) {
-        // Muestra un alert con el total de diapositivas
-        alert(`¡Has llegado a la última diapositiva! Total de diapositivas: ${totalSlides}`);
-        // Puedes agregar aquí cualquier acción adicional que desees realizar
+      480: {
+        perView: 2
       }
-    });
-  
-    glider.refresh(true);
+    }
   });
-  
 
+  glide.on('run.after', function () {
+    var isEnd = glide.index >= glide.length - glide.settings.perView;
+    var isFirst = glide.index === 0;
+    
+    var nextButton = document.querySelector('.glide__arrow--right');
+    var prevButton = document.querySelector('.glide__arrow--left');
+    
+    if (nextButton) {
+      if (isEnd) {
+        nextButton.classList.add('hidden');
+        // Alert cuando llega a la última tarjeta
+        alert('¡Estás en la última tarjeta!');
+      } else {
+        nextButton.classList.remove('hidden');
+      }
+    }
+
+    if (prevButton) {
+      if (isFirst) {
+        prevButton.classList.add('hidden');
+      } else {
+        prevButton.classList.remove('hidden');
+      }
+    }
+  });
+
+  glide.mount();
+});

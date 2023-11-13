@@ -191,43 +191,26 @@ header {
 .nav-buttons button:hover svg {
   fill: var(--rojo-nintendo);
 }
+/* EDIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* EDIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
+/* EDIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
 
-.glider-prev,
-.glider-next {
-  background-color: #666666;
-  width: 66px;
-  height: 360px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 2px;
-  border-radius: 8px;
-  opacity: .7;
-}
-button.glider-next.disabled{
-  opacity: .7;
-}
 
-.glider-prev {
-  left: 0px;
-}
-.glider-next {
-  right: 0px;
+
+/* Añade el estilo específico de Glide.js para la opacidad */
+
+.container{
+  /* border-bottom: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
 }
 
-.glider-prev:hover, .glider-next:hover {
-  background-color: #666666;
-  opacity: .9;
-  transition: 0.2s;
-  cursor: pointer;
-  filter:brightness(.7);
-  
-}
-.parent{
-  border-bottom: 1px solid black;
-  
-}
-.h2_featured {
+
+.h2_featured{
   width: 60%;
   left: auto;
   margin-right: auto;
@@ -246,7 +229,7 @@ button.glider-next.disabled{
   scroll-margin-top: 120px;
 }
 
--container_hr{
+.container_hr{
   margin: 0;
 }
 
@@ -353,6 +336,104 @@ button.glider-next.disabled{
 .containerCards{
   padding-top: 3rem;
     padding-bottom: 3rem
+}
+.glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  color: rgb(175, 115, 115);
+  text-transform: uppercase;
+  padding: 9px 12px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+  transform: translateY(-50%);
+  line-height: 1;
+  background-color: #666666;
+  width: 66px;
+  height: 360px;
+  opacity: .7;
+  transform: translateY(-50%);
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.glide__arrow:focus {
+  outline: none;
+}
+
+.glide__arrow:hover {
+  opacity: .92;
+}
+
+
+.glide__arrow--right {
+  right: 1.4rem;
+  background-color: rgb(84, 88, 88);
+  opacity: .7; 
+  transition: opacity 150ms ease, border 300ms ease-in-out;
+}
+
+.glide__arrow--right.hidden {
+  display: none;
+}
+.hidden{
+  display: none;
+}
+
+.glide__bullets {
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  display: inline-flex;
+  list-style: none;
+  transform: translateX(-50%);
+}
+
+.glide__bullet {
+  background-color: rgba(164, 11, 11, 0.5);
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  line-height: 0;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+  margin: 0 0.25em;
+}
+
+.glide__bullet:focus {
+  outline: none;
+}
+
+.glide__bullet:hover,
+.glide__bullet:focus {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.glide__bullet--active {
+  background-color: rgb(54, 52, 52);
+}
+
+.glide--swipeable {
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.glide--dragging {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 

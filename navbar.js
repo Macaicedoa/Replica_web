@@ -1,5 +1,7 @@
+'use-strict'
 /* Dropdown-menu*/
 let body = document.getElementsByTagName("body");
+let navBar1 = document.getElementById("nav-1"); 
 let selectOptions = document.getElementsByClassName("select");
 let options = document.getElementsByClassName("options");
 let arrow = selectOptions[0].getElementsByClassName("d-arrow");
@@ -87,15 +89,12 @@ selectOptions[0].addEventListener("click", function(e){
       let selectText = selectOptions[0].getElementsByTagName('p');
       for(let i=0;i<pText.length;i++){
         pText[i].addEventListener("click", function(){
-          console.log(selectText[0].innerHTML);
           let dummyText = selectText[0].innerHTML.split("<");
-          console.log(dummyText)
           dummyText[0] = this.innerHTML;
-          console.log(dummyText.join("<").replace(',',''))
           selectText[0].innerHTML = dummyText.join("<").replace(',','')
         });
       }
-      let arrows = navButtons.getElementsByClassName("d-arrow");
+      let arrows = navButtons[0].getElementsByClassName("d-arrow");
         for(let j = 0;j<arrows.length;j++){
           arrows[j].style= "transform: initial; transition-duration: 200ms;"
         }   
@@ -105,8 +104,6 @@ selectOptions[0].addEventListener("click", function(e){
 body[0].addEventListener("click", function() {
   options[0].style = "visibility:hidden"
   arrow[0].style = "transform: initial; transition-duration: 200ms;"
-  let arrows = document.getElementsByClassName("d-arrow");
-      for(let j = 0;j<arrows.length;j++){
-        arrows[j].style= "transform: initial; transition-duration: 200ms;"
-      } 
+  
 });
+

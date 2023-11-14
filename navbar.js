@@ -9,6 +9,23 @@ let overlayHeader = document.getElementsByClassName("dropdown-overlay");
 let overlayBlack = document.getElementsByClassName("buttons-dropdown-overlay"); 
 let dropdownButtons = ["buttons-dropdown-store","buttons-dropdown-games","buttons-dropdown-switch","","buttons-dropdown-play"];
 
+selectOptions[0].addEventListener("click", function(e){
+  e.stopPropagation();
+  let status = getComputedStyle(options[0]);
+  if( status.visibility == "visible"){
+      options[0].style = "visibility:hidden;"
+      arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
+  }else{
+      options[0].style = "visibility:visible;"
+      arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
+      let arrows = document.getElementsByClassName("d-arrow");
+        for(j = 0;j<arrows.length;j++){
+          arrows[j].style= "transform: initial; transition-duration: 200ms;"
+        }   
+  }  
+});
+
+
 for(let i=0;i<buttons.length;i++){ 
   buttons[i].id = i;
   buttons[i].addEventListener("click",function(e){
@@ -44,31 +61,6 @@ for(let i=0;i<buttons.length;i++){
   });
 }
 
-selectOptions[0].addEventListener("click", function(e){
-  e.stopPropagation();
-  let status = getComputedStyle(options[0]);
-  if( status.visibility == "visible"){
-      options[0].style = "visibility:hidden;"
-      arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
-  }else{
-      options[0].style = "visibility:visible;"
-      arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
-      let arrows = document.getElementsByClassName("d-arrow");
-        for(j = 0;j<arrows.length;j++){
-          arrows[j].style= "transform: initial; transition-duration: 200ms;"
-        }   
-  }  
-});
-
-body[0].addEventListener("click", function() {
-  options[0].style = "visibility:hidden"
-  arrow[0].style = "transform: initial; transition-duration: 200ms;"
-  let arrows = document.getElementsByClassName("d-arrow");
-      for(j = 0;j<arrows.length;j++){
-        arrows[j].style= "transform: initial; transition-duration: 200ms;"
-      } 
-});
-
 overlayBlack[0].addEventListener("click", function() {
   let arrows = document.getElementsByClassName("d-arrow");
   for(j = 0;j<arrows.length;j++){
@@ -97,3 +89,12 @@ for(let i = 0;i<closeButtons.length;i++){
   } 
   });
 }
+
+body[0].addEventListener("click", function() {
+  options[0].style = "visibility:hidden"
+  arrow[0].style = "transform: initial; transition-duration: 200ms;"
+  let arrows = document.getElementsByClassName("d-arrow");
+      for(j = 0;j<arrows.length;j++){
+        arrows[j].style= "transform: initial; transition-duration: 200ms;"
+      } 
+});

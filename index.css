@@ -111,6 +111,11 @@ header{
   cursor: pointer;
 }
 
+.select:focus p{
+  color: var(--rojo-nintendo);
+  cursor: pointer;
+}
+
 .select p{
   display: inline-flex;
   justify-content: space-around;

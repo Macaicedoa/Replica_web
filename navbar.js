@@ -9,22 +9,6 @@ let overlayHeader = document.getElementsByClassName("dropdown-overlay");
 let overlayBlack = document.getElementsByClassName("buttons-dropdown-overlay"); 
 let dropdownButtons = ["buttons-dropdown-store","buttons-dropdown-games","buttons-dropdown-switch","","buttons-dropdown-play"];
 
-selectOptions[0].addEventListener("click", function(e){
-  e.stopPropagation();
-  let status = getComputedStyle(options[0]);
-  if( status.visibility == "visible"){
-      options[0].style = "visibility:hidden;"
-      arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
-  }else{
-      options[0].style = "visibility:visible;"
-      arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
-      let arrows = document.getElementsByClassName("d-arrow");
-        for(j = 0;j<arrows.length;j++){
-          arrows[j].style= "transform: initial; transition-duration: 200ms;"
-        }   
-  }  
-});
-
 
 for(let i=0;i<buttons.length;i++){ 
   buttons[i].id = i;
@@ -89,6 +73,34 @@ for(let i = 0;i<closeButtons.length;i++){
   } 
   });
 }
+
+selectOptions[0].addEventListener("click", function(e){
+  e.stopPropagation();
+  let status = getComputedStyle(options[0]);
+  if( status.visibility == "visible"){
+      options[0].style = "visibility:hidden;"
+      arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
+  }else{
+      options[0].style = "visibility:visible;"
+      arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
+      let pText = options[0].getElementsByTagName('li');
+      let selectText = selectOptions[0].getElementsByTagName('p');
+      for(let i=0;i<pText.length;i++){
+        pText[i].addEventListener("click", function(){
+          console.log(selectText[0].innerHTML);
+          let dummyText = selectText[0].innerHTML.split("<");
+          console.log(dummyText)
+          dummyText[0] = this.innerHTML;
+          console.log(dummyText.join("<").replace(',',''))
+          selectText[0].innerHTML = dummyText.join("<").replace(',','')
+        });
+      }
+      let arrows = navButtons.getElementsByClassName("d-arrow");
+        for(j = 0;j<arrows.length;j++){
+          arrows[j].style= "transform: initial; transition-duration: 200ms;"
+        }   
+  }  
+});
 
 body[0].addEventListener("click", function() {
   options[0].style = "visibility:hidden"

@@ -47,7 +47,7 @@ for(let i=0;i<buttons.length;i++){
 
 overlayBlack[0].addEventListener("click", function() {
   let arrows = document.getElementsByClassName("d-arrow");
-  for(j = 0;j<arrows.length;j++){
+  for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
     overlayBlack[0].style = "display:none; transition-duration: 200ms;"
     let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[j]);
@@ -62,7 +62,7 @@ let closeButtons = overlayHeader[0].getElementsByClassName("close");
 for(let i = 0;i<closeButtons.length;i++){
   closeButtons[i].addEventListener("click", function() {
     let arrows = document.getElementsByClassName("d-arrow");
-    for(j = 0;j<arrows.length;j++){
+    for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
     overlayBlack[0].style = "display:none; transition-duration: 200ms;"
     let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[j]);
@@ -96,7 +96,7 @@ selectOptions[0].addEventListener("click", function(e){
         });
       }
       let arrows = navButtons.getElementsByClassName("d-arrow");
-        for(j = 0;j<arrows.length;j++){
+        for(let j = 0;j<arrows.length;j++){
           arrows[j].style= "transform: initial; transition-duration: 200ms;"
         }   
   }  
@@ -106,7 +106,7 @@ body[0].addEventListener("click", function() {
   options[0].style = "visibility:hidden"
   arrow[0].style = "transform: initial; transition-duration: 200ms;"
   let arrows = document.getElementsByClassName("d-arrow");
-      for(j = 0;j<arrows.length;j++){
+      for(let j = 0;j<arrows.length;j++){
         arrows[j].style= "transform: initial; transition-duration: 200ms;"
       } 
 });

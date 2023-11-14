@@ -32,6 +32,12 @@ svg{
   fill: var(--color-font);
 }
 
+h2{
+  font-size: var(--font-size-text);
+  margin: 0;
+  align-self: flex-start;
+ }
+
 .search-form input{
   font-family: var(--nintendo-font);
   color: var(--nintendo-font);
@@ -53,6 +59,23 @@ svg{
   font-size: var(--font-size-text);
   line-height: var(--line-text);
   font-size: smaller;
+}
+
+.div-search-input-bar button svg{
+  fill: var(--color-font);
+}
+
+.search-top-store h2{
+  font-size: 1rem;
+}
+
+.search-top-store-products div div h2{
+  font-size: var(--font-size-text);
+}
+
+.search-top-store-products div div div span{
+  font-family: "museo-sans-300";
+  font-size: var(--font-size-text);
 }
 
 .nav-buttons button{
@@ -83,6 +106,10 @@ svg{
   color: var(--nintendo-font);
   font-weight: var(--font-weight-nintendo);
   font-size: var(--font-size-text);
+}
+
+.trendin-topics-links div a{
+  line-height: var(--line-text);
 }
 
 .dropdown-store-title a{
@@ -117,6 +144,8 @@ button{
   line-height: 1;
   font-size: 100%;
 }
+
+
 .titulo {
   font-size: 1.75rem;
   font-weight: var(--font-weight-nintendo);

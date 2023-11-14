@@ -2,13 +2,18 @@
 /* Dropdown-menu*/
 let body = document.getElementsByTagName("body");
 let navBar1 = document.getElementById("nav-1"); 
+let navBar2 = document.getElementById("nav-2"); 
 let selectOptions = document.getElementsByClassName("select");
 let options = document.getElementsByClassName("options");
 let arrow = selectOptions[0].getElementsByClassName("d-arrow");
+let arrow2 = selectOptions[1].getElementsByClassName("d-arrow");
 let navButtons = document.getElementsByClassName("nav-buttons");
 let buttons = navButtons[0].getElementsByTagName("button");
 let overlayHeader = document.getElementsByClassName("dropdown-overlay");
 let overlayBlack = document.getElementsByClassName("buttons-dropdown-overlay"); 
+let inputForm = document.getElementsByClassName("search-form"); 
+let inputBar = inputForm[0].getElementsByTagName("input");
+let inputOverlay = document.getElementsByClassName("div-search-input");
 let dropdownButtons = ["buttons-dropdown-store","buttons-dropdown-games","buttons-dropdown-switch","","buttons-dropdown-play"];
 
 
@@ -48,6 +53,7 @@ for(let i=0;i<buttons.length;i++){
 }
 
 overlayBlack[0].addEventListener("click", function() {
+  inputOverlay[0].style = "display: none; transition-duration: 200ms;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
@@ -60,9 +66,12 @@ overlayBlack[0].addEventListener("click", function() {
   } 
 });
 
-let closeButtons = overlayHeader[0].getElementsByClassName("close");
+let closeButtons = document.getElementsByClassName("close");
 for(let i = 0;i<closeButtons.length;i++){
   closeButtons[i].addEventListener("click", function() {
+    inputOverlay[0].style = "display: none; transition-duration: 200ms;"
+    navBar1.style = "display: flex; transition-duration: 200ms;"
+    navBar2.style = "display: flex; transition-duration: 200ms;"
     let arrows = document.getElementsByClassName("d-arrow");
     for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
@@ -75,6 +84,21 @@ for(let i = 0;i<closeButtons.length;i++){
   } 
   });
 }
+
+inputBar[0].addEventListener("click", function() {
+  inputOverlay[0].style = "display: flex; transition-duration: 200ms;"
+  navBar1.style = "display: none; transition-duration: 200ms;"
+  navBar2.style = "display: none; transition-duration: 200ms;"
+  overlayBlack[0].style = "display:block;"
+  let arrows = document.getElementsByClassName("d-arrow");
+  for(let j = 1;j<arrows.length;j++){
+  arrows[j].style= "transform: initial; transition-duration: 200ms;"
+  let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[j]);
+  if((allOverlayHeader[0])){
+    allOverlayHeader[0].style = "display:none; transition-duration: 200ms;";
+  }
+} 
+});
 
 selectOptions[0].addEventListener("click", function(e){
   e.stopPropagation();
@@ -100,6 +124,34 @@ selectOptions[0].addEventListener("click", function(e){
         }   
   }  
 });
+
+selectOptions[1].addEventListener("click", function(e){
+  e.stopPropagation();
+  let status = getComputedStyle(options[1]);
+  if( status.visibility == "visible"){
+      options[1].style = "visibility:hidden;"
+      arrow2[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
+  }else{
+      options[1].style = "visibility:visible;"
+      arrow2[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
+      let pText = options[1].getElementsByTagName('li');
+      let selectText = selectOptions[1].getElementsByTagName('p');
+      for(let i=0;i<pText.length;i++){
+        pText[i].addEventListener("click", function(){
+          let dummyText = selectText[0].innerHTML.split("<");
+          dummyText[0] = this.innerHTML;
+          selectText[0].innerHTML = dummyText.join("<").replace(',','')
+        });
+      }
+      let arrows = navButtons[0].getElementsByClassName("d-arrow");
+        for(let j = 0;j<arrows.length;j++){
+          arrows[j].style= "transform: initial; transition-duration: 200ms;"
+        }   
+  }  
+});
+
+
+
 
 body[0].addEventListener("click", function() {
   options[0].style = "visibility:hidden"

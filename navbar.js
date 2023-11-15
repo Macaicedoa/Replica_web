@@ -90,13 +90,13 @@ inputBar[0].addEventListener("click", function() {
   navBar2.style = "display: none; transition-duration: 200ms;"
   overlayBlack[0].style = "display:block;"
   let arrows = document.getElementsByClassName("d-arrow");
-  for(let j = 1;j<arrows.length;j++){
-  arrows[j].style= "transform: initial; transition-duration: 200ms;"
-  let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[j]);
-  if((allOverlayHeader[0])){
-    allOverlayHeader[0].style = "display:none; transition-duration: 200ms;";
-  }
-} 
+  for(let i = 1;i<arrows.length;i++){
+    arrows[i].style= "transform: initial; transition-duration: 200ms;"  
+    let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[i-1]);
+    if((allOverlayHeader[0])){
+      allOverlayHeader[0].style = "display:none; transition-duration: 200ms;";
+    }
+  } 
 });
 
 for(let i=0;i<selectOptions.length;i++){

@@ -53,6 +53,8 @@ for(let i=0;i<buttons.length;i++){
 
 overlayBlack[0].addEventListener("click", function() {
   inputOverlay[0].style = "display: none; transition-duration: 200ms;"
+  navBar1.style = "display: flex; transition-duration: 200ms;"
+  navBar2.style = "display: flex; transition-duration: 200ms;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"

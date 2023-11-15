@@ -203,9 +203,6 @@ header{
   padding: 0px 1rem 0px 0px;
   height: 36.9375rem;
   flex-direction: column;
-  position: relative;
-  top: 0;
-  left: 0;
   display: none;
   z-index: 9999;
 }

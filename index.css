@@ -43,7 +43,6 @@ header{
   height: 52px;
   display: flex;
   flex-direction: row;
-  transition: all 200ms ease-in-out 25ms;
 }
 
 .home-link{
@@ -807,14 +806,16 @@ header{
     background-color: var(--rojo-nintendo);
     height: 2.75rem;
     padding: 0px 1rem;
-    transition: all 200ms ease-in-out 25ms;
+  
   }
   .home-link{
     height: 100%;
+
   }
   .home-link svg{
     height: 22px;
     margin: auto 0;
+
   }
   .search-form{
     display: none;

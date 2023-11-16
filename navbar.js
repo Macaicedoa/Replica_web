@@ -40,6 +40,7 @@ for(let i=0;i<buttons.length;i++){
       arrowButtons[0].style= "transform: rotate(180deg); transition-duration: 200ms;"
       if(dropdownContent[0]){
           overlayBlack[0].style = "display:block"
+          body[0].style = "overflow:hidden"
           dropdownContent[0].style = "display:flex"
       }
     }
@@ -91,6 +92,7 @@ inputBar[0].addEventListener("click", function() {
   navBar1.style = "display: none; transition-duration: 200ms;"
   navBar2.style = "display: none; transition-duration: 200ms;"
   overlayBlack[0].style = "display:block;"
+  body[0].style = "overflow:hidden;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let i = 1;i<arrows.length;i++){
     arrows[i].style= "transform: initial; transition-duration: 200ms;"  

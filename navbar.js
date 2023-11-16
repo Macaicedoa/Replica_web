@@ -4,7 +4,8 @@ let body = document.getElementsByTagName("body");
 let navBar1 = document.getElementById("nav-1"); 
 let navBar2 = document.getElementById("nav-2"); 
 let selectOptions = document.getElementsByClassName("select");
-
+let options = document.getElementsByClassName("options");
+let arrow = selectOptions[0].getElementsByClassName("d-arrow");
 let arrow2 = selectOptions[1].getElementsByClassName("d-arrow");
 let navButtons = document.getElementsByClassName("nav-buttons");
 let buttons = navButtons[0].getElementsByTagName("button");
@@ -103,35 +104,55 @@ inputBar[0].addEventListener("click", function() {
   } 
 });
 
-for(let i=0;i<selectOptions.length;i++){
-  options = selectOptions[i].getElementsByClassName("options");
-  let arrow = selectOptions[i].getElementsByClassName("d-arrow");
-  selectOptions[i].addEventListener("click", function(e){
-    
-    e.stopPropagation();
-    let status = getComputedStyle(options[0]);
-    if( status.visibility == "visible"){
-        options[0].style = "visibility:hidden;"
-        arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
-    }else{
-        options[0].style = "visibility:visible;"
-        arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
-        let pText = options[0].getElementsByTagName('li');
-        let selectText = selectOptions[i].getElementsByTagName('p');
-        for(let i=0;i<pText.length;i++){
-          pText[i].addEventListener("click", function(){
-            let dummyText = selectText[0].innerHTML.split("<");
-            dummyText[0] = this.innerHTML;
-            selectText[0].innerHTML = dummyText.join("<").replace(',','')
-          });
-        }
-        let arrows = navButtons[0].getElementsByClassName("d-arrow");
-          for(let j = 0;j<arrows.length;j++){
-            arrows[j].style= "transform: initial; transition-duration: 200ms;"
-          }   
-    }  
-  });
-}
+selectOptions[0].addEventListener("click", function(e){
+  e.stopPropagation();
+  let status = getComputedStyle(options[0]);
+  if( status.visibility == "visible"){
+      options[0].style = "visibility:hidden;"
+      arrow[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
+  }else{
+      options[0].style = "visibility:visible;"
+      arrow[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
+      let pText = options[0].getElementsByTagName('li');
+      let selectText = selectOptions[0].getElementsByTagName('p');
+      for(let i=0;i<pText.length;i++){
+        pText[i].addEventListener("click", function(){
+          let dummyText = selectText[0].innerHTML.split("<");
+          dummyText[0] = this.innerHTML;
+          selectText[0].innerHTML = dummyText.join("<").replace(',','')
+        });
+      }
+      let arrows = navButtons[0].getElementsByClassName("d-arrow");
+        for(let j = 0;j<arrows.length;j++){
+          arrows[j].style= "transform: initial; transition-duration: 200ms;"
+        }   
+  }  
+});
+
+selectOptions[1].addEventListener("click", function(e){
+  e.stopPropagation();
+  let status = getComputedStyle(options[1]);
+  if( status.visibility == "visible"){
+      options[1].style = "visibility:hidden;"
+      arrow2[0].style = "transform: rotate(0deg); transition-duration: 200ms;"
+  }else{
+      options[1].style = "visibility:visible;"
+      arrow2[0].style = "transform: rotate(180deg); transition-duration: 200ms;"
+      let pText = options[1].getElementsByTagName('li');
+      let selectText = selectOptions[1].getElementsByTagName('p');
+      for(let i=0;i<pText.length;i++){
+        pText[i].addEventListener("click", function(){
+          let dummyText = selectText[0].innerHTML.split("<");
+          dummyText[0] = this.innerHTML;
+          selectText[0].innerHTML = dummyText.join("<").replace(',','')
+        });
+      }
+      let arrows = navButtons[0].getElementsByClassName("d-arrow");
+        for(let j = 0;j<arrows.length;j++){
+          arrows[j].style= "transform: initial; transition-duration: 200ms;"
+        }   
+  }  
+});
 
 body[0].addEventListener("click", function() {
   options[0].style = "visibility:hidden"

@@ -41,6 +41,9 @@ header{
 
 #nav-1{
   height: 52px;
+  display: flex;
+  flex-direction: row;
+  transition: all 200ms ease-in-out 25ms;
 }
 
 .home-link{
@@ -68,6 +71,7 @@ header{
   display: inline-flex;
   align-items: center;
   border-bottom: solid 1px rgb(72, 72, 72);
+  flex: 1 1 0;
 }
 
 .search-form:hover{
@@ -157,17 +161,23 @@ header{
 
 .nav-links{
   display: inline-flex;
-  position: absolute;
+  position: sticky;
   right: 0;
   gap: 1.75rem;
   justify-content: space-around;
   padding: 0px 1.25rem;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 .nav-links li{
   list-style-type: none;
   align-items: center;
   display: flex;
+}
+
+.nav-links li span{
+  white-space: pre;
 }
 
 .link{
@@ -691,7 +701,6 @@ header{
   display: none;
   width: 100%;
   height: 100vh;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
@@ -791,9 +800,6 @@ header{
     --border-radius-small: 0.75rem;
     --border-radius: 1rem;
   }
- .search-form{
-    max-width: 28.125rem;
- }
 }
 
 @media(max-width: 1025px){
@@ -826,6 +832,7 @@ header{
   }
   #nav-2{
     display: none;
+    transition: all 200ms ease-in-out 25ms;
   }
   .second-navbar-container{
     display: flex;

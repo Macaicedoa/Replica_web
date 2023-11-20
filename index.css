@@ -28,9 +28,6 @@ header{
   z-index: 9999;
 }
 
-#nav1{
-  height: 52px;
-}
 .navbar{
   margin: 0;
   display: flex;
@@ -40,122 +37,27 @@ header{
 }
 
 #nav-1{
-  height: 52px;
-  display: flex;
-  flex-direction: row;
+  background-color: var(--rojo-nintendo);
+  height: 2.75rem;
+  padding: 0px 1rem;
 }
 
 .home-link{
+  height: 100%;
   background-color: var(--rojo-nintendo);
   position: relative;
-  width: 105px;
-  height: 52px;
   margin: 0 0;
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
 .home-link svg{
-  margin: auto;
-  height: 16px;
-}
+  height: 22px;
+  margin: auto 0;
 
+}
 .search-form{
-  margin: auto 1rem auto 1rem;
-  height: 2.125rem;
-  width: 100%;
-  max-width: 28.125rem;
-  justify-content: space-between;
-  display: inline-flex;
-  align-items: center;
-  border-bottom: solid 1px rgb(72, 72, 72);
-  flex: 1 1 0;
-}
-
-.search-form:hover{
-  border-bottom: solid 1px var(--rojo-nintendo);
-  cursor:pointer;
-}
-
-.search-form input,input::placeholder{
-  border: none;
-  flex: 1;
-  outline: none;
-  line-height: 1.5;
-}
-
-.search-form:hover .icono{
-  fill: var(--rojo-nintendo);
-  transition: fill 200ms ease-in-out 25ms;
-}
-
-.search-form:hover input::placeholder{
-  color: var(--rojo-nintendo);
-  transition: color 200ms ease-in-out 25ms;
-}
-
-.select{
-  border: none;
-  margin: 10px 0px;
-  padding: 2px;
-  width: 140px;
-  z-index: 99999;
-}
-
-.select:hover .d-arrow{
-  fill: var(--rojo-nintendo);
-}
-
-.select:hover p{
-  color: var(--rojo-nintendo);
-  cursor: pointer;
-}
-
-.select:focus p{
-  color: var(--rojo-nintendo);
-  cursor: pointer;
-}
-
-.select p{
-  display: inline-flex;
-  justify-content: space-around;
-  width: 140px;
-  align-items: center;
-}
-
-.options{
-  position: fixed;
-  margin-top: -6px;
-  background-color: rgb(255, 255, 255);
-  opacity: 1;
-  width: 140px;
-  z-index: 9999;
-  border-radius: var(--border-radius);
-  box-shadow: 0px 0px 10px 0px #88888870;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.options ul{
-  margin: 2px 0px;
-  list-style-type: none;
-  padding-inline-start: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-}
-
-.options ul li{
-  margin: 0px;
-  list-style-type: none;
-  padding-inline-start: 0px;
-  padding: 5px 10px; 
-}
-
-.options ul li:hover{
-  background-color: rgba(218, 218, 218, 0.452); 
-  cursor: pointer
+  display: none;
 }
 
 .nav-links{
@@ -170,534 +72,47 @@ header{
 }
 
 .nav-links li{
-  list-style-type: none;
-  align-items: center;
+  display: none;
+}
+
+.nav-links li:last-child{
   display: flex;
-}
-
-.nav-links li span{
-  white-space: pre;
-}
-
-.link{
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-}
-
-.link:hover{
-  color: var(--rojo-nintendo);
-  fill: var(--rojo-nintendo);
-  cursor: pointer;
-}
-
-.icono{
-  margin: 0px 0.375rem 0px 0px;
-  width: var(--icons-width);
-  height: var(--icons-height);
-}
-
-.link:hover svg{
-  fill: var(--rojo-nintendo);
 }
 
 .flag{
-  margin: auto;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  align-items: center;
 }
 
 .div-search-input{
-  width: 100%;
-  padding: 0px 1rem 0px 0px;
-  height: 36.9375rem;
-  flex-direction: column;
   display: none;
-  z-index: 9999;
-}
-
-.div-search-input-bar{
-  display: flex;
-  width: 100%;
-  align-items: center;
-}
-
-.div-search-input-bar button{
-  border: none;
-  background-color: white;
-  position: fixed;
-  right: 1rem;
-}
-
-.search-trending{
-  padding: 1rem 0px 0px 0px;
-}
-
-.search-trending h2{
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-.div-search-input-content{
-  display: grid;
-  min-height: 17.5rem;
-  padding: 0.75rem 7.5625rem 2.5rem;
-}
-
-.trendin-topics-links{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.5rem;
-}
-
-.trendin-topics-links div{
-  margin-bottom: 0.5rem;
-}
-
-.trendin-topics-links div a{
-  text-decoration: none;
-  color: var(--rojo-nintendo);
-  transition: all 200ms ease-out;
-}
-
-.trendin-topics-links div a:hover{
-  color: rgb(172, 1, 16);
-}
-
-.search-top-store-products{
-  display: grid;
-  gap: 1.5rem;
-  grid-template-rows: auto;
-  margin-bottom: 1.5rem;
-  grid-template-columns: repeat(2, minmax(auto, 343px));
-}
-
-.search-top-store-products{
-  width: 100%;
-  color: rgb(72, 72, 72);
-  position: relative;
-  border-radius: var(--border-radius);
-}
-
-.search-top-store h2{
-  margin-bottom: 0.75rem;
-}
-
-.search-top-store-products div{
-  display: flex;
-  flex-direction: row;
-  transition: opacity 1s ease-in-out 0ms;
-  background-color: rgb(255, 255, 255);
-  z-index: 5;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgb(218, 218, 218);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  align-items: center;
-}
-
-.search-top-store-products div img{
-  position: relative;
-  inset: 0px;
-  width: 100%;
-  max-width: 8.8125rem;
-  height: auto;
-  object-fit: cover;
-  overflow: hidden;
-}
-
-.search-top-store-products div div{
-  border: none;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  justify-content: center;
-  width: 100%;  
-  margin: 0.5rem 0.75rem;
-}
-
-.search-top-store-products div div h2 {
-  margin-bottom: 0;
-}
-
-.search-top-store-products div div div{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: fit-content;
-  margin: 0;
-}
-
-.search-top-store-products div div div span{
-  padding-left: 0.375rem;
-  border-left: 2px solid currentColor;
-}
-
-.heart-icon{
-  background-color: white;
-  border: none;
-}
-
-.heart-icon svg{
-  color: var(--rojo-nintendo);
-}
-
-.heart-icon svg g:first-child{
-  fill: white;
 }
 
 #nav-2{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-
-.nav-buttons{
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  gap: 1rem;
-  height: 44px;
-}
-
-.nav-buttons button{
-  background-color: transparent;
-  border:none;
-  display:inline-flex;
-  align-items: center;
-  justify-content: space-evenly;
-  z-index: 999;
-  padding: 0.75rem;
-}
-
-.d-arrow{
-  margin: 1px 0px 0px 0.5rem;
-}
-
-.nav-buttons button:hover{
-  color: var(--rojo-nintendo);
-  cursor: pointer
-}
-.nav-buttons button:hover svg{
-  fill: var(--rojo-nintendo);
-}
-.nav-buttons button:focus svg{
-  fill: var(--rojo-nintendo);
-}
-.nav-buttons button:focus{
-  color: var(--rojo-nintendo);
-}
-
-.dropdown-overlay{
-  position: relative;
-  z-index: 9999;
-  height: fit-content;
-  width: 100%;
+  display: none;
 }
 
 .buttons-dropdown-store{
-  display: flex;
-  flex-direction: column;
-  height: 304.766px;
-  justify-content: space-between;
   display: none;
-}
-
-.dropdown-store-title{
-  width: 100%;
-  height: 64px;
-  background-color: var(--rojo-nintendo);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  position: relative;
-  flex-direction: column;
-}
-
-.dropdown-store-title a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-}
-.dropdown-store-title button{
-  background-color: var(--rojo-nintendo);
-  border: none;
-  position: absolute;
-  right: 0;
-}
-.dropdown-store-title button svg{
-  border-radius: 50%;
-  background-color: var(--rojo-nintendo);
-  fill: white;
-  border: none;
-  align-self: self-end;
-}
-.dropdown-red-border{
-  width:100%;
-  height:14px;
-  background-color: white;
-  background-image: url(svg-icons/red_border.svg);
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 64px;
-}
-.store-elements{
-  display: flex;
-  justify-content: center;
-  gap: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1440px;
-  min-width: calc(1025px - 2rem);
-  margin: 0px auto;
-}
-
-.store-elements div{
-  min-width: 7.5rem;
-}
-
-.store-elements div a{
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-.store-elements div a:hover{
-  color: var(--rojo-nintendo);
-}
-
-.store-elements div a svg{
-  fill: var(--rojo-nintendo);
-  margin: 0 5px 0 0;
-}
-
-.shop-all{
-  margin-top: 1rem;
-  background-color: white;
-  border: solid 1px var(--rojo-nintendo);
-  border-radius: 1rem;
-  color: var(--rojo-nintendo);
-  cursor:pointer;
-  height: 3rem;
-  padding: 0px 1.5rem;
-  width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 0.5rem;
-  z-index: 9999;
-  transition: background-color 0.2s ease-in-out;
-  transition-delay: 0.05s;
-}
-
-.shop-all:hover{
-  background-color: rgba(230,0,18,0.1);
-  box-shadow: 0 1px 1px rgba(230,0,18, 0.2);
-  animation-name: jump;
-  animation-duration: 0.2s;
-  animation-iteration-count: 2;
-  animation-timing-function: linear;
-}
-
-@keyframes jump {
-  50% {
-      padding: 10px 1.6rem;
-      box-shadow: 1px 2px 3px 1px rgba(230,0,18, 0.2);
-      border: solid 2px var(--rojo-nintendo);
-  }
-  100% {
-      padding: 0px 1.5rem;
-      box-shadow: 0 1px 1px rgba(230,0,18, 0.2);
-      border: solid 1px var(--rojo-nintendo);
-  }
 }
 
 .buttons-dropdown-games{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.75rem;
   display: none;
-}
-
-.buttons-dropdown-games button{
-  display: flex;
-  position: relative;
-  right: 0;
-  width: fit-content;
-  align-self: flex-end;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  padding-right: 1rem;
-  padding-bottom: 0.25rem;
-}
-
-.close svg{
-  fill: rgb(197, 196, 196)
-}
-
-.games-options{
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  gap: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1440px;
-  min-width: calc(1025px - 2rem);
-  margin: 0px auto;
-}
-
-.options-divs{
-  display: flex;
-  flex-direction: column;
-  min-width: 7.5rem;
-  width: fit-content;
-}
-
-.options-links{
-  width: 120px;
-  text-align: center;
-  transition: all 200ms;
-}
-
-.options-links div img{
-  width: 120px;
-}
-
-.options-links p{
-  margin: 0;
-}
-
-.options-links:hover{
-  color: var(--rojo-nintendo);
-  border-color: var(--rojo-nintendo);
-}
-
-.options-links:hover div{
-  color: var(--rojo-nintendo);
-  border-color: var(--rojo-nintendo);
-  background-color: var(--rojo-nintendo);
-}
-
-.options-links:hover div svg{
-  fill: white;
-}
-
-.options-links div{
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  width: 100%;
-  height: 4.25rem;
-  border: 1px solid rgb(218, 218, 218);
-  border-radius: var(--border-radius);
-  margin-bottom: 0.5rem;
-  background-color: white;
-  transition-property: background-color, border-color;
-  transition-duration: 200ms;
 }
 
 .buttons-dropdown-switch{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  padding-top: 0.5rem;
-  padding-bottom: 0.75rem;
-  display:none;
-}
-
-.buttons-dropdown-switch button{
-  display: flex;
-  position: relative;
-  right: 0;
-  width: fit-content;
-  align-self: flex-end;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  padding-right: 1rem;
-  padding-bottom: 0.25rem;
-}
-
-.switch-options{
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  gap: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1440px;
-  min-width: calc(1025px - 2rem);
-  margin: 0px auto;
-}
-
-.switch-options div:first-child a{
-  width: 260px;
-}
-.switch-options div:first-child a div img{
-  width: 260px;
-}
-.switch-options div:nth-child(3) a div svg{
-  background-color: white;
-  fill: var(--rojo-nintendo);
+  display: none;
 }
 
 .buttons-dropdown-play{
+  display: none;
+}
+
+.second-navbar-container{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  padding-top: 0.5rem;
-  padding-bottom: 0.75rem;
-  display: none;
-}
-
-.buttons-dropdown-play button{
-  display: flex;
-  position: relative;
-  right: 0;
-  width: fit-content;
-  align-self: flex-end;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  padding-right: 1rem;
-  padding-bottom: 0.25rem;
-}
-
-.play-options{
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  gap: 1.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 1440px;
-  min-width: calc(1025px - 2rem);
-  margin: 0px auto;
-}
-
-.buttons-dropdown-overlay{
-  border-top: var(--gris-linea-separacion);
-  width: 100%;
-  height: 100cqmax;
-  background-color: black;
-  position: absolute;
-  opacity: 0.5;
-  overflow-y: hidden;
-  overflow: hidden;
-  display:none;
-}
-.second-navbar-container{
-  display: none;
+  transition: display 25ms ease-in-out 200ms;
   width: 100%;
   height: 100vh;
   flex-direction: column;
@@ -794,54 +209,678 @@ header{
   transition: all 200ms ease-in-out 0s;
 }
 
+
 @media(min-width: 1025px){
-  :root{
-    --border-radius-small: 0.75rem;
-    --border-radius: 1rem;
-  }
-}
-
-@media(max-width: 1025px){
-  #nav-1{
-    background-color: var(--rojo-nintendo);
-    height: 2.75rem;
-    padding: 0px 1rem;
   
-  }
-  .home-link{
-    height: 100%;
-
-  }
-  .home-link svg{
-    height: 22px;
-    margin: auto 0;
-
-  }
-  .search-form{
-    display: none;
-  }
-  .nav-links li{
-    display: none;
-  }
-  .nav-links li:last-child{
+  .navbar{
+    margin: 0;
     display: flex;
-  }
-  .flag{
-    border: 1px solid white;
-    border-radius: 0.2rem;
+    width: 100%;
+    border-bottom: var(--gris-linea-separacion);
     align-items: center;
   }
-  #nav-2{
-    display: none;
-    transition: all 200ms ease-in-out 25ms;
+
+  #nav-1{
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 0;
   }
-  .second-navbar-container{
+
+  .home-link{
+    background-color: var(--rojo-nintendo);
+    position: relative;
+    width: 105px;
+    height: 52px;
+    margin: 0 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .home-link svg{
+    margin: auto;
+    height: 16px;
+  }
+
+  .search-form{
+    margin: auto 1rem auto 1rem;
+    height: 2.125rem;
+    width: 100%;
+    max-width: 28.125rem;
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: solid 1px rgb(72, 72, 72);
+    flex: 1 1 0;
+  }
+
+  .search-form:hover{
+    border-bottom: solid 1px var(--rojo-nintendo);
+    cursor:pointer;
+  }
+
+  .search-form input,input::placeholder{
+    border: none;
+    flex: 1;
+    outline: none;
+    line-height: 1.5;
+  }
+
+  .search-form:hover .icono{
+    fill: var(--rojo-nintendo);
+    transition: fill 200ms ease-in-out 25ms;
+  }
+
+  .search-form:hover input::placeholder{
+    color: var(--rojo-nintendo);
+    transition: color 200ms ease-in-out 25ms;
+  }
+
+  .select{
+    border: none;
+    margin: 10px 0px;
+    padding: 2px;
+    width: 140px;
+    z-index: 99999;
+  }
+
+  .select:hover .d-arrow{
+    fill: var(--rojo-nintendo);
+  }
+
+  .select:hover p{
+    color: var(--rojo-nintendo);
+    cursor: pointer;
+  }
+
+  .select:focus p{
+    color: var(--rojo-nintendo);
+    cursor: pointer;
+  }
+
+  .select p{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 140px;
+    align-items: center;
+  }
+
+  .options{
+    position: fixed;
+    margin-top: -6px;
+    background-color: rgb(255, 255, 255);
+    opacity: 1;
+    width: 140px;
+    z-index: 9999;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px 0px #88888870;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .options ul{
+    margin: 2px 0px;
+    list-style-type: none;
+    padding-inline-start: 0px;
     display: flex;
     flex-direction: column;
-    transition: display 25ms ease-in-out 200ms;
+    justify-content: left;
+  }
+
+  .options ul li{
+    margin: 0px;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    padding: 5px 10px; 
+  }
+
+  .options ul li:hover{
+    background-color: rgba(218, 218, 218, 0.452); 
+    cursor: pointer
+  }
+
+  .nav-links{
+    display: inline-flex;
+    position: sticky;
+    right: 0;
+    gap: 1.75rem;
+    justify-content: space-around;
+    padding: 0px 1.25rem;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  .nav-links li{
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+  }
+
+  .nav-links li span{
+    white-space: pre;
+  }
+
+  .link{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .link:hover{
+    color: var(--rojo-nintendo);
+    fill: var(--rojo-nintendo);
+    cursor: pointer;
+  }
+
+  .icono{
+    margin: 0px 0.375rem 0px 0px;
+    width: var(--icons-width);
+    height: var(--icons-height);
+  }
+
+  .link:hover svg{
+    fill: var(--rojo-nintendo);
+  }
+
+  .flag{
+    margin: auto;
+  }
+
+  .div-search-input{
+    width: 100%;
+    padding: 0px 1rem 0px 0px;
+    height: 36.9375rem;
+    flex-direction: column;
+    display: none;
+    z-index: 9999;
+  }
+
+  .div-search-input-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .div-search-input-bar button{
+    border: none;
+    background-color: white;
+    position: fixed;
+    right: 1rem;
+  }
+
+  .search-trending{
+    padding: 1rem 0px 0px 0px;
+  }
+
+  .search-trending h2{
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .div-search-input-content{
+    display: grid;
+    min-height: 17.5rem;
+    padding: 0.75rem 7.5625rem 2.5rem;
+  }
+
+  .trendin-topics-links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  .trendin-topics-links div{
+    margin-bottom: 0.5rem;
+  }
+
+  .trendin-topics-links div a{
+    text-decoration: none;
+    color: var(--rojo-nintendo);
+    transition: all 200ms ease-out;
+  }
+
+  .trendin-topics-links div a:hover{
+    color: rgb(172, 1, 16);
+  }
+
+  .search-top-store-products{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: auto;
+    margin-bottom: 1.5rem;
+    grid-template-columns: repeat(2, minmax(auto, 343px));
+  }
+
+  .search-top-store-products{
+    width: 100%;
+    color: rgb(72, 72, 72);
+    position: relative;
+    border-radius: var(--border-radius);
+  }
+
+  .search-top-store h2{
+    margin-bottom: 0.75rem;
+  }
+
+  .search-top-store-products div{
+    display: flex;
+    flex-direction: row;
+    transition: opacity 1s ease-in-out 0ms;
+    background-color: rgb(255, 255, 255);
+    z-index: 5;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .search-top-store-products div img{
+    position: relative;
+    inset: 0px;
+    width: 100%;
+    max-width: 8.8125rem;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .search-top-store-products div div{
+    border: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    width: 100%;  
+    margin: 0.5rem 0.75rem;
+  }
+
+  .search-top-store-products div div h2 {
+    margin-bottom: 0;
+  }
+
+  .search-top-store-products div div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    margin: 0;
+  }
+
+  .search-top-store-products div div div span{
+    padding-left: 0.375rem;
+    border-left: 2px solid currentColor;
+  }
+
+  .heart-icon{
+    background-color: white;
+    border: none;
+  }
+
+  .heart-icon svg{
+    color: var(--rojo-nintendo);
+  }
+
+  .heart-icon svg g:first-child{
+    fill: white;
+  }
+
+  #nav-2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .nav-buttons{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 44px;
+  }
+
+  .nav-buttons button{
+    background-color: transparent;
+    border:none;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    padding: 0.75rem;
+  }
+
+  .d-arrow{
+    margin: 1px 0px 0px 0.5rem;
+  }
+
+  .nav-buttons button:hover{
+    color: var(--rojo-nintendo);
+    cursor: pointer
+  }
+  .nav-buttons button:hover svg{
+    fill: var(--rojo-nintendo);
+  }
+  .nav-buttons button:focus svg{
+    fill: var(--rojo-nintendo);
+  }
+  .nav-buttons button:focus{
+    color: var(--rojo-nintendo);
+  }
+
+  .dropdown-overlay{
+    position: relative;
+    z-index: 9999;
+  }
+
+  .buttons-dropdown-store{
+    display: flex;
+    flex-direction: column;
+    height: 304.766px;
+    justify-content: space-between;
+    display: none;
+  }
+
+  .dropdown-store-title{
+    width: 100%;
+    height: 64px;
+    background-color: var(--rojo-nintendo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+    flex-direction: column;
+  }
+
+  .dropdown-store-title a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-store-title button{
+    background-color: var(--rojo-nintendo);
+    border: none;
+    position: absolute;
+    right: 0;
+  }
+  .dropdown-store-title button svg{
+    border-radius: 50%;
+    background-color: var(--rojo-nintendo);
+    fill: white;
+    border: none;
+    align-self: self-end;
+  }
+  .dropdown-red-border{
+    width:100%;
+    height:14px;
+    background-color: white;
+    background-image: url(svg-icons/red_border.svg);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 64px;
+  }
+  .store-elements{
+    display: flex;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    margin: 0px auto;
+  }
+
+  .store-elements div{
+    min-width: 7.5rem;
+  }
+
+  .store-elements div a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .store-elements div a:hover{
+    color: var(--rojo-nintendo);
+  }
+
+  .store-elements div a svg{
+    fill: var(--rojo-nintendo);
+    margin: 0 5px 0 0;
+  }
+
+  .shop-all{
+    margin-top: 1rem;
+    background-color: white;
+    border: solid 1px var(--rojo-nintendo);
+    border-radius: 1rem;
+    color: var(--rojo-nintendo);
+    cursor:pointer;
+    height: 3rem;
+    padding: 0px 1.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    z-index: 9999;
+    transition: background-color 0.2s ease-in-out;
+    transition-delay: 0.05s;
+  }
+
+  .shop-all:hover{
+    background-color: rgba(230,0,18,0.1);
+    box-shadow: 0 1px 1px rgba(230,0,18, 0.2);
+    animation-name: jump;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+  }
+
+  @keyframes jump {
+    50% {
+        padding: 10px 1.6rem;
+        box-shadow: 1px 2px 3px 1px rgba(230,0,18, 0.2);
+        border: solid 2px var(--rojo-nintendo);
+    }
+    100% {
+        padding: 0px 1.5rem;
+        box-shadow: 0 1px 1px rgba(230,0,18, 0.2);
+        border: solid 1px var(--rojo-nintendo);
+    }
+  }
+
+  .buttons-dropdown-games{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    display: none;
+  }
+
+  .buttons-dropdown-games button{
+    display: flex;
+    position: relative;
+    right: 0;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .close svg{
+    fill: rgb(197, 196, 196)
+  }
+
+  .games-options{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    margin: 0px auto;
+  }
+
+  .options-divs{
+    display: flex;
+    flex-direction: column;
+    min-width: 7.5rem;
+    width: fit-content;
+  }
+
+  .options-links{
+    width: 120px;
+    text-align: center;
+    transition: all 200ms;
+  }
+
+  .options-links div img{
+    width: 120px;
+  }
+
+  .options-links p{
+    margin: 0;
+  }
+
+  .options-links:hover{
+    color: var(--rojo-nintendo);
+    border-color: var(--rojo-nintendo);
+  }
+
+  .options-links:hover div{
+    color: var(--rojo-nintendo);
+    border-color: var(--rojo-nintendo);
+    background-color: var(--rojo-nintendo);
+  }
+
+  .options-links:hover div svg{
+    fill: white;
+  }
+
+  .options-links div{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 4.25rem;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    background-color: white;
+    transition-property: background-color, border-color;
+    transition-duration: 200ms;
+  }
+
+  .buttons-dropdown-switch{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    display:none;
+  }
+
+  .buttons-dropdown-switch button{
+    display: flex;
+    position: relative;
+    right: 0;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .switch-options{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    margin: 0px auto;
+  }
+
+  .switch-options div:first-child a{
+    width: 260px;
+  }
+  .switch-options div:first-child a div img{
+    width: 260px;
+  }
+  .switch-options div:nth-child(3) a div svg{
+    background-color: white;
+    fill: var(--rojo-nintendo);
+  }
+
+  .buttons-dropdown-play{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    display: none;
+  }
+
+  .buttons-dropdown-play button{
+    display: flex;
+    position: relative;
+    right: 0;
+    width: fit-content;
+    align-self: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding-right: 1rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .play-options{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    min-width: calc(1025px - 2rem);
+    margin: 0px auto;
+  }
+
+  .buttons-dropdown-overlay{
+    border-top: var(--gris-linea-separacion);
+    width: 100%;
+    height: 100cqmax;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+    overflow-y: hidden;
+    overflow: hidden;
+    display:none;
+  }
+  .second-navbar-container{
+    display: none;
   }
 }
-
 
 /*****************Quitar este overflow*************************/
 footer{

@@ -16,7 +16,6 @@ let inputBar = inputForm[0].getElementsByTagName("input");
 let inputOverlay = document.getElementsByClassName("div-search-input");
 let dropdownButtons = ["buttons-dropdown-store","buttons-dropdown-games","buttons-dropdown-switch","","buttons-dropdown-play"];
 
-
 for(let i=0;i<buttons.length;i++){ 
   buttons[i].id = i;
   buttons[i].addEventListener("click",function(e){
@@ -84,7 +83,7 @@ for(let i = 0;i<closeButtons.length;i++){
       allOverlayHeader[0].style = "display:none; transition-duration: 200ms;";
       overlayBlack[0].style = "display:none; transition-duration: 200ms;"
     }
-  } 
+    } 
   });
 }
 
@@ -160,3 +159,28 @@ body[0].addEventListener("click", function() {
   arrow[0].style = "transform: initial; transition-duration: 200ms;"
 });
 
+
+const windowWidth = window.matchMedia("(max-width: 1025px)")
+console.log(windowWidth)
+
+windowWidth.onchange= (e) => {
+  if (e.matches) { // If media query matches
+
+    inputOverlay[0].style = "display: none;"
+    navBar1.style = "display: flex;"
+    navBar2.style = "display: none; "
+    let arrows = document.getElementsByClassName("d-arrow");
+    for(let j = 0;j<arrows.length;j++){
+    arrows[j].style= "transform: initial; transition-duration: 200ms;"
+    overlayBlack[0].style = "display:none; transition-duration: 200ms;"
+    let allOverlayHeader = overlayHeader[0].getElementsByClassName(dropdownButtons[j]);
+    if((allOverlayHeader[0])){
+      allOverlayHeader[0].style = "display:none; transition-duration: 200ms;";
+      overlayBlack[0].style = "display:none; transition-duration: 200ms;"
+    }
+    } 
+    
+  }else{
+    navBar2.style = "display: flex; transition-duration: 200ms;"
+  }
+};

@@ -145,30 +145,44 @@ button{
   font-size: 100%;
 }
 
-
-.titulo {
+.news h2{
   font-size: 1.75rem;
-  font-weight: var(--font-weight-nintendo);
-  margin-block: 0px;
-  line-height: 1.35;
 }
 
-.titulo-card {
+.news-article{
+  color: var(--color-font);
+  text-decoration: none;
+  font-family: "museo-sans-300";
+  font-size: var(--font-size-text);
+  line-height: var(--line-text);
+}
+
+.news-article-text p{
+  font-size: 0.875rem;
+  font-family: "museo-sans-300";
+
+}
+
+.news-article-text h3{
   font-size: 1rem;
-  margin: 0px;
-  font-weight: 700;
+  font-family: "museo-sans-700";
+
 }
 
-.subtitulo {
-  font-size: 1.125rem;
-  font-weight: 700;
-  margin: 1em 0px;
+.news-article-text span{
+  font-size: 0.875rem;
+  font-family: "museo-sans-700";
 }
 
-.headline{
-  font-family: inherit;
-}
-
-.text{
-  font-family: inherit;
+@media (min-width: 429px) {
+  .news-article-text p{
+    font-size: 1rem;
+  }
+  .news-article-text h3{
+    font-size: 1.125rem;
+    margin: 0px;
+  }
+  .news-article-text span{
+    font-size: 1rem;
+  }
 }

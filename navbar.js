@@ -56,6 +56,7 @@ overlayBlack[0].addEventListener("click", function() {
   inputOverlay[0].style = "display: none; transition-duration: 200ms;"
   navBar1.style = "display: flex; transition-duration: 200ms;"
   navBar2.style = "display: flex; transition-duration: 200ms;"
+  body[0].style = "overflow-y:auto;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
@@ -71,6 +72,7 @@ overlayBlack[0].addEventListener("click", function() {
 let closeButtons = document.getElementsByClassName("close");
 for(let i = 0;i<closeButtons.length;i++){
   closeButtons[i].addEventListener("click", function() {
+    body[0].style = "overflow-y:auto;"
     inputOverlay[0].style = "display: none; transition-duration: 200ms;"
     navBar1.style = "display: flex; transition-duration: 200ms;"
     navBar2.style = "display: flex; transition-duration: 200ms;"
@@ -92,7 +94,7 @@ inputBar[0].addEventListener("click", function() {
   navBar1.style = "display: none; transition-duration: 200ms;"
   navBar2.style = "display: none; transition-duration: 200ms;"
   overlayBlack[0].style = "display:block;"
-  body[0].style = "overflow:hidden;"
+  body[0].style = "overflow-y:hidden;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let i = 1;i<arrows.length;i++){
     arrows[i].style= "transform: initial; transition-duration: 200ms;"  

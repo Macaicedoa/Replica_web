@@ -351,6 +351,11 @@ header{
   margin: 0px;
 }
 
+.news-button-container {
+  width: 100%;
+  display: flex;
+}
+
 .news-button{
   text-decoration: none;
   background-color: var(--rojo-nintendo);
@@ -372,6 +377,7 @@ header{
   width: calc(100% - 2px);
   border-radius: var(--border-radius-small);
   transition: all 200ms ease-in-out 25ms;
+  flex: 1;
 }
 
 .news-button:hover{
@@ -1119,6 +1125,10 @@ header{
     display: grid;
     gap: 2rem;
     justify-items: start;
+  }
+
+  .news-button{
+    flex: 0;
   }
 }
 

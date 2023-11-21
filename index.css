@@ -1039,7 +1039,8 @@ header{
 
   .news-article-mini h3{
     font-size: 1rem;
-      margin: 0px;
+    margin: 0px;
+    margin-bottom: 1rem;
   }
 
 }

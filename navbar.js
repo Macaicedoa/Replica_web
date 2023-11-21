@@ -169,7 +169,7 @@ console.log(windowWidth)
 
 windowWidth.onchange= (e) => {
   if (e.matches) { // If media query matches
-
+    body[0].style = "overflow-y:auto;"
     inputOverlay[0].style = "display: none;"
     navBar1.style = "display: flex;"
     navBar2.style = "display: none; "
@@ -185,6 +185,7 @@ windowWidth.onchange= (e) => {
     } 
     
   }else{
+    body[0].style = "overflow-y:auto;"
     navBar2.style = "display: flex; transition-duration: 200ms;"
   }
 };

@@ -338,7 +338,7 @@ header{
   position: relative;
   border-bottom: 2px solid var(--rojo-nintendo);
   margin: 0px;
-  transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+  transition: all 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
 }
 
 .news-article:hover div span{
@@ -350,7 +350,43 @@ header{
   font-size: 0.875rem;
   margin: 0px;
 }
-  
+
+.news-button{
+  text-decoration: none;
+  background-color: var(--rojo-nintendo);
+  position: relative;
+  margin: 0px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  border: unset;
+  padding: 0px 1.5rem;
+  color: rgb(255, 255, 255);
+  box-sizing: content-box;
+  border-width: 1px;
+  border-style: solid;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  border-radius: var(--border-radius-small);
+  transition: all 200ms ease-in-out 25ms;
+}
+
+.news-button:hover{
+  background-color: rgb(172, 1, 16);
+}
+
+.news-button svg{
+  fill: white;
+  height: 1.25rem;
+  width: auto;
+  margin-left: 0px;
+  margin-right: 1rem;
+  z-index: 1;
+}
+
 @media (min-width: 429px) {
   .news-article-text p:nth-child(n-3){
     margin: 0rem 0rem 1rem;
@@ -369,7 +405,17 @@ header{
     margin: 0px;
     margin-bottom: 1rem;
   }
+  .news-button{
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+  }
 
+  .news-button svg{
+    height: 1.25rem;
+  }
+  
 }
 
 @media(min-width: 768px){

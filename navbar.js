@@ -48,6 +48,7 @@ for(let i=0;i<buttons.length;i++){
       arrowButtons[0].style= "transform: initial; transition-duration: 200ms;"  
       overlayBlack[0].style = "display:none"
       dropdownContent[0].style = "display:none"
+      body[0].style = "overflow-y:auto;"
     }
   });
 }

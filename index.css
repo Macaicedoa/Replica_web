@@ -251,6 +251,7 @@ header {
 }
 .containerCards{
   margin-top: -1rem;
+  padding: 2rem;
 }
 .card  {
   border-radius: 19px;
@@ -262,13 +263,12 @@ header {
   max-height: 312px;
   min-width: 254px;
   max-width: 254px;
-
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 20px;
-  margin-right: 90px ; 
+  margin-left: 2rem !important ;
+   
   box-sizing: border-box;
   flex-shrink: 0;
   overflow: hidden;
@@ -443,19 +443,27 @@ header {
   max-height: 312px;
   min-width: 254px;
   max-width: 254px;
-   
+  cursor: default
 }
 
 
 @media(min-width: 50px){
- 
+
+  .card{
+    
+    min-width: calc((100% - 1.2rem) /1.1);
+    max-width: calc((100% - 1.2rem) /1.2);
+    min-height: 260px;
+    max-height: 260px;
+    
+   
+  }
   
-  
-} 
+}
 
 @media(min-width: 520px){
  
-  .card {
+  .card{
     min-height: 312px;
     max-height: 312px;
     min-width: 254px;
@@ -464,4 +472,6 @@ header {
   }
   
 } 
+
+
 

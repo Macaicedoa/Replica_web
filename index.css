@@ -922,6 +922,7 @@ header{
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
   overflow: hidden;
+  transition: all 200ms ease-in-out 25ms;
 }
 
 .news-article-img{
@@ -1018,6 +1019,11 @@ header{
   border-bottom: 2px solid rgb(172, 1, 16);
 }
 
+.news-article-mini h3{
+  font-size: 0.875rem;
+  margin: 0px;
+}
+
 @media (min-width: 429px) {
   .news-article-text p:nth-child(n-3){
     margin: 0rem 0rem 1rem;
@@ -1029,6 +1035,11 @@ header{
 
   .news-article-text span{
     margin-bottom: 1rem;
+  }
+
+  .news-article-mini h3{
+    font-size: 1rem;
+      margin: 0px;
   }
 
 }

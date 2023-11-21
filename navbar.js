@@ -119,6 +119,7 @@ selectOptions[0].addEventListener("click", function(e){
           let dummyText = selectText[0].innerHTML.split("<");
           dummyText[0] = this.innerHTML;
           selectText[0].innerHTML = dummyText.join("<").replace(',','')
+          selectOptions[1].getElementsByTagName('p')[0].innerHTML=dummyText.join("<").replace(',','');
         });
       }
       let arrows = navButtons[0].getElementsByClassName("d-arrow");
@@ -143,7 +144,8 @@ selectOptions[1].addEventListener("click", function(e){
         pText[i].addEventListener("click", function(){
           let dummyText = selectText[0].innerHTML.split("<");
           dummyText[0] = this.innerHTML;
-          selectText[0].innerHTML = dummyText.join("<").replace(',','')
+          selectText[0].innerHTML = dummyText.join("<").replace(',','');
+          selectOptions[0].getElementsByTagName('p')[0].innerHTML=dummyText.join("<").replace(',','');
         });
       }
       let arrows = navButtons[0].getElementsByClassName("d-arrow");

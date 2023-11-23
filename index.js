@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'slider',
     perView: 9,
     focusAt: 0,
-    dragThreshold: false,
+    
     startAt: 0,
     bound: true,
     rewind: false,
-    gap: 0,
     breakpoints: {
       2500: { perView: 9 },
       2400: { perView: 8 },

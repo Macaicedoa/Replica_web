@@ -48,6 +48,7 @@ for(let i=0;i<buttons.length;i++){
       arrowButtons[0].style= "transform: initial; transition-duration: 200ms;"  
       overlayBlack[0].style = "display:none"
       dropdownContent[0].style = "display:none"
+      body[0].style = "overflow-y:auto;"
     }
   });
 }
@@ -56,6 +57,7 @@ overlayBlack[0].addEventListener("click", function() {
   inputOverlay[0].style = "display: none; transition-duration: 200ms;"
   navBar1.style = "display: flex; transition-duration: 200ms;"
   navBar2.style = "display: flex; transition-duration: 200ms;"
+  body[0].style = "overflow-y:auto;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let j = 0;j<arrows.length;j++){
     arrows[j].style= "transform: initial; transition-duration: 200ms;"
@@ -71,6 +73,7 @@ overlayBlack[0].addEventListener("click", function() {
 let closeButtons = document.getElementsByClassName("close");
 for(let i = 0;i<closeButtons.length;i++){
   closeButtons[i].addEventListener("click", function() {
+    body[0].style = "overflow-y:auto;"
     inputOverlay[0].style = "display: none; transition-duration: 200ms;"
     navBar1.style = "display: flex; transition-duration: 200ms;"
     navBar2.style = "display: flex; transition-duration: 200ms;"
@@ -92,7 +95,7 @@ inputBar[0].addEventListener("click", function() {
   navBar1.style = "display: none; transition-duration: 200ms;"
   navBar2.style = "display: none; transition-duration: 200ms;"
   overlayBlack[0].style = "display:block;"
-  body[0].style = "overflow:hidden;"
+  body[0].style = "overflow-y:hidden;"
   let arrows = document.getElementsByClassName("d-arrow");
   for(let i = 1;i<arrows.length;i++){
     arrows[i].style= "transform: initial; transition-duration: 200ms;"  
@@ -167,7 +170,7 @@ console.log(windowWidth)
 
 windowWidth.onchange= (e) => {
   if (e.matches) { // If media query matches
-
+    body[0].style = "overflow-y:auto;"
     inputOverlay[0].style = "display: none;"
     navBar1.style = "display: flex;"
     navBar2.style = "display: none; "
@@ -183,6 +186,7 @@ windowWidth.onchange= (e) => {
     } 
     
   }else{
+    body[0].style = "overflow-y:auto;"
     navBar2.style = "display: flex; transition-duration: 200ms;"
   }
 };

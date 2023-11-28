@@ -180,6 +180,13 @@ button{
   font-size: 1.3125rem;
 }
 
+.characters-grid h3{
+  margin: 0;
+  padding: 0;
+  margin-block: 0px;
+  font-size: 1.125rem;
+}
+
 @media (min-width: 429px) {
   .news-article-text p{
     font-size: 1rem;
@@ -194,5 +201,9 @@ button{
 
   .characters-grid h2{
     font-size: 1.75rem;
+  }
+
+  .characters-grid h3{
+    font-size: 1.3125rem;
   }
 }

@@ -393,6 +393,72 @@ header{
   z-index: 1;
 }
 
+.characters{
+  position: relative;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  scroll-margin-top: 120px;
+  border-top: var(--gris-linea-separacion);
+}
+
+.characters-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 71.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.characters-grid h2{
+  grid-column: 1 / span 2;
+}
+
+.characters-grid div{
+  display: flex;
+  flex-direction: column;
+}
+
+.characters-grid div a{
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+}
+
+.characters-grid div a img:first-child{
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.characters-grid div a:hover img:first-child{
+  transform: scale(1.0);
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.characters-grid div a img:nth-child(2){
+  width: 100%;
+  height: 100%;
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.characters-grid div a:hover img:nth-child(2){
+  transform: scale(1.15);
+  transition: transform 200ms ease-in-out 0s;
+}
+
 @media (min-width: 429px) {
   .news-article-text p:nth-child(n-3){
     margin: 0rem 0rem 1rem;
@@ -447,6 +513,23 @@ header{
   .news-article:nth-child(2){
     grid-column: 3/span 2;
   } 
+
+  .characters{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .characters-grid{
+    grid-template-columns: repeat(4, 1fr);
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .characters-grid h2{
+    grid-column: 1 / span 4;
+  }
+
 }
 
 @media(min-width: 1025px){
@@ -1136,6 +1219,8 @@ header{
   .news-button{
     flex: 0;
   }
+
+  
 }
 
 

@@ -517,8 +517,8 @@
             draggable="false"
         /></picture>
       </div>
-      <section class="Sectionstyles">
-        <div class="constrained">
+      <section class="container-section-style">
+        <div class="container-grid-style">
           <div class="Grid-styles">
             <div class="Text-Carouselstyles">
               <h2 class="Headingstyles">
@@ -536,157 +536,62 @@
           </div>
         </div>
       </section>
-      <div class="AutoplayCarouselstyles__Controls-sc-1jblu2z-7 bbDqgq">
-        <button
-          aria-label="Previous slide"
-          aria-controls="center-stage-slider-frame"
-          type="button"
-          class="Buttonstyles__Button-sc-1rgmf3w-2 lhgPCM AutoplayCarouselstyles__SlideButton-sc-1jblu2z-6 kHylNd"
-        >
-          <span
-            class="Buttonstyles__ButtonBacker-sc-1rgmf3w-0 dxxcCe"
-            style="
-              background-color: rgba(0, 0, 0, 0.25);
-              border-color: rgb(255, 255, 255);
-              transform: none;
-            "
-          ></span
-          ><span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="AutoplayCarouselstyles__Prev-sc-1jblu2z-3 bTTbvV"
-              width="16"
-              role="presentation"
-              alt=""
-              data-testid="ChevronLeftIcon"
-              size="16"
-              color="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                fill="currentColor"
-                d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"
-              ></path></svg
-          ></span></button
-        ><button
-          aria-label="Play slideshow"
-          data-testid="pause-button"
-          type="button"
-          class="Buttonstyles__Button-sc-1rgmf3w-2 lhgPCM AutoplayCarouselstyles__SlideButton-sc-1jblu2z-6 kHylNd"
-        >
-          <span
-            class="Buttonstyles__ButtonBacker-sc-1rgmf3w-0 dxxcCe"
-            style="
-              background-color: rgba(0, 0, 0, 0.25);
-              border-color: rgb(255, 255, 255);
-              transform: none;
-            "
-          ></span
-          ><span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID"
-            ><svg
-              data-name="Play button"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="AutoplayCarouselstyles__Play-sc-1jblu2z-4 uMzNV"
-              width="14"
-              role="presentation"
-              alt=""
-              data-testid="PlayButtonInnerIcon"
-              size="14"
-              color="currentColor"
-            >
-              <path
-                d="M27.409 18.594L8.055 31.476A3.122 3.122 0 0 1 3.2 28.882V3.118A3.124 3.124 0 0 1 8.055.524L27.41 13.406a3.116 3.116 0 0 1 0 5.188z"
-                fill="currentColor"
-                fill-rule="evenodd"
-              ></path></svg
-          ></span>
+      <div class="container-botones">
+        <!-- Botón de retroceso -->
+        <button aria-label="Previous slide" aria-controls="center-stage-slider-frame" type="button" class="button-preview">
+            <span class="span-preview" style="background-color: rgba(170, 66, 66, 0.25); border-color: rgb(255, 255, 255); transform: none;"></span>
+            <span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="AutoplayCarouselstyles__Prev-sc-1jblu2z-3 bTTbvV" width="16" role="presentation" alt="" data-testid="ChevronLeftIcon" size="16" color="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M14.3 16l12.4 11.7-4.5 4.3L5.3 16 22.2 0l4.5 4.3z"></path>
+                </svg>
+            </span>
         </button>
-        <div
-          role="tablist"
-          class="AutoplayCarouselstyles__Tablist-sc-1jblu2z-8 iZTIQC"
-        >
-          <button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            aria-controls="center-stage-slide-1"
-            aria-label="Slide 1 of 3"
-            class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 kBnBet"
-          >
-            <span
-              class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR"
-              ><span
-                class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"
-              ></span
-            ></span></button
-          ><button
-            type="button"
-            role="tab"
-            aria-selected="false"
-            aria-controls="center-stage-slide-2"
-            aria-label="Slide 2 of 3"
-            class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 kBnBet"
-          >
-            <span
-              class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR"
-              ><span
-                class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"
-              ></span
-            ></span></button
-          ><button
-            type="button"
-            role="tab"
-            aria-selected="true"
-            aria-controls="center-stage-slide-3"
-            aria-label="Slide 3 of 3"
-            class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 kBnBet"
-          >
-            <span
-              class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR"
-              ><span
-                class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"
-              ></span
-            ></span>
-          </button>
+    
+        <!-- Botón de reproducción/pausa -->
+        <button aria-label="Play slideshow" data-testid="pause-button" type="button" class="button-pause">
+            <span class="Buttonstyles__ButtonBacker-sc-1rgmf3w-0 dxxcCe" style="background-color: rgba(0, 0, 0, 0.25); border-color: rgb(255, 255, 255); transform: none;"></span>
+            <span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID">
+                <svg data-name="Play button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="button-play" width="14" role="presentation" alt="" data-testid="PlayButtonInnerIcon" size="14" color="currentColor">
+                    <path d="M27.409 18.594L8.055 31.476A3.122 3.122 0 0 1 3.2 28.882V3.118A3.124 3.124 0 0 1 8.055.524L27.41 13.406a3.116 3.116 0 0 1 0 5.188z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </span>
+        </button>
+    
+        <!-- Indicadores de progreso -->
+        <div role="tablist" class="container-progress">
+            <!-- Indicador de progreso para la Slide 1 -->
+            <button type="button" role="tab" aria-selected="false" aria-controls="center-stage-slide-1" aria-label="Slide 1 of 3" class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 barra-progreso">
+                <span class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR">
+                    <span class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"></span>
+                </span>
+            </button>
+    
+            <!-- Indicador de progreso para la Slide 2 -->
+            <button type="button" role="tab" aria-selected="false" aria-controls="center-stage-slide-2" aria-label="Slide 2 of 3" class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 barra-progreso">
+                <span class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR">
+                    <span class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"></span>
+                </span>
+            </button>
+    
+            <!-- Indicador de progreso para la Slide 3 (Seleccionada) -->
+            <button type="button" role="tab" aria-selected="true" aria-controls="center-stage-slide-3" aria-label="Slide 3 of 3" class="AutoplayCarouselstyles__TabButton-sc-1jblu2z-12 barra-progreso">
+                <span class="AutoplayCarouselstyles__ProgressOuter-sc-1jblu2z-10 jETkDR">
+                    <span class="AutoplayCarouselstyles__ProgressInner-sc-1jblu2z-11 cyxzCh"></span>
+                </span>
+            </button>
         </div>
-        <button
-          aria-label="Next slide"
-          aria-controls="center-stage-slider-frame"
-          type="button"
-          class="Buttonstyles__Button-sc-1rgmf3w-2 lhgPCM AutoplayCarouselstyles__SlideButton-sc-1jblu2z-6 kHylNd"
-        >
-          <span
-            class="Buttonstyles__ButtonBacker-sc-1rgmf3w-0 dxxcCe"
-            style="
-              background-color: rgba(0, 0, 0, 0.25);
-              border-color: rgb(255, 255, 255);
-              transform: none;
-            "
-          ></span
-          ><span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 32 32"
-              class="AutoplayCarouselstyles__Next-sc-1jblu2z-2 fLQRIx"
-              width="16"
-              role="presentation"
-              alt=""
-              data-testid="ChevronRightIcon"
-              size="16"
-              color="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                fill="currentColor"
-                d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"
-              ></path></svg
-          ></span>
+    
+        <!-- Botón de avance -->
+        <button aria-label="Next slide" aria-controls="center-stage-slider-frame" type="button" class="button-next">
+            <span class="Buttonstyles__ButtonBacker-sc-1rgmf3w-0 dxxcCe" style="background-color: rgba(0, 0, 0, 0.25); border-color: rgb(255, 255, 255); transform: none;"></span>
+            <span class="Buttonstyles__Span-sc-1rgmf3w-1 bAFpID">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="AutoplayCarouselstyles__Next-sc-1jblu2z-2 fLQRIx" width="16" role="presentation" alt="" data-testid="ChevronRightIcon" size="16" color="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M5.3 4.3L9.8 0l16.9 16L9.8 32l-4.5-4.3L17.7 16z"></path>
+                </svg>
+            </span>
         </button>
-      </div>
+    </div>
+    
     </section>
     <!-- EDIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
     <!-- EDIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII -->
@@ -966,7 +871,7 @@
         </div>
       </div>
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
     <script src="index.js"></script>

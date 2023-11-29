@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   glide.on('run.after', function () {
-    var isEnd = glide.index === 2;
+    var isEnd = glide.index === glide.length - 1;
     var isFirst = glide.index === 0;
     
     var nextButton = document.querySelector('.glide__arrow--right');
@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
        
       }
     }
-
+    // alert(glide.index);
+    
     if (prevButton) {
       if (isFirst) {
         prevButton.classList.add('hidden');

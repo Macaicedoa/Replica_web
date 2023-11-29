@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dragThreshold: false,
     startAt: 0,
     bound: true,
-    rewind: false,
+    rewind: true,
     gap: 0,
     breakpoints: {
       2500: { perView: 9 },

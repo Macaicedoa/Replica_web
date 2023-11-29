@@ -20,11 +20,8 @@ body {
 }
 
 header{
-  position: sticky;
-  top: 0;
   width: 100%;
   background-color: white;
-  z-index: 9999;
 }
 
 .navbar{
@@ -39,6 +36,7 @@ header{
   background-color: var(--rojo-nintendo);
   height: 2.75rem;
   padding: 0px 1rem;
+  position: relative;
 }
 
 .home-link{
@@ -113,7 +111,7 @@ header{
   flex-direction: column;
   transition: display 25ms ease-in-out 200ms;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
@@ -227,13 +225,13 @@ header{
   gap: 2rem;
   justify-items: start;
   grid-template-columns: repeat(1, 1fr);
-
 }
 
 .news-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem
+  gap: 1.5rem;
+  z-index: 999;
 }
 
 .news-article{
@@ -250,6 +248,10 @@ header{
   border-bottom-right-radius: var(--border-radius);
   overflow: hidden;
   transition: all 200ms ease-in-out 25ms;
+}
+
+.news-article:focus{
+  z-index: 9999;
 }
 
 .news-article-img{
@@ -533,6 +535,12 @@ header{
 }
 
 @media(min-width: 1025px){
+
+  header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
   
   .navbar{
     margin: 0;

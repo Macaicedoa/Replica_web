@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dragThreshold: false,
     startAt: 0,
     bound: true,
-    rewind: true,
+    rewind: false,
     gap: 0,
     breakpoints: {
       2500: { perView: 9 },
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   glide.on('run.after', function () {
-    var isEnd = glide.index === glide.length - 1;
+    var isEnd = glide.steps === '<';
     var isFirst = glide.index === 0;
     
     var nextButton = document.querySelector('.glide__arrow--right');
@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
        
       }
     }
-    // alert(glide.index);
     
     if (prevButton) {
       if (isFirst) {

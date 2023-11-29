@@ -99,13 +99,15 @@
   transition: opacity 150ms ease, border 300ms ease-in-out;
 }
 
-.glide__arrow--right.hidden {
+/* .glide__arrow--right.hidden {
   display: none;
-}
+} */
 .hidden{
   display: none;
 }
-
+.glide__arrow--disabled{
+  display: none;
+}
 .glide__bullets {
   position: absolute;
   z-index: 2;

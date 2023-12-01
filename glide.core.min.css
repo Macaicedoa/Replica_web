@@ -11,7 +11,7 @@
 }
 .glide__slides {
   position: relative;
-  width: 270px;
+  width: -50%;
   list-style: none;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -25,10 +25,9 @@
   gap: 1rem;
   height: 350px;
   align-items: center;
-  min-width: 254px;
-  max-width: 254px;
-  
+
 }
+
 .glide__slides--dragging {
   user-select: none;
 }
@@ -103,9 +102,9 @@
 /* .glide__arrow--right.hidden {
   display: none;
 } */
-.hidden{
+/* .hidden{
   display: none;
-}
+} */
 .glide__arrow--disabled{
   display: none;
 }

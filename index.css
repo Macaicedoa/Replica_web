@@ -367,7 +367,9 @@ header {
     
    
   }
-  
+   .glide__slides {
+    gap: 1.5rem;
+  }
 }
 
 @media(min-width: 520px){
@@ -377,9 +379,11 @@ header {
     max-height: 312px;
     min-width: 254px;
     max-width: 254px;
-   
+    
   }
-  
+  .glide__slides {
+    margin-left: -200px;
+  }
 } 
 
 

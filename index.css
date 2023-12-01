@@ -354,6 +354,12 @@ header {
     padding-bottom: 3rem
 }
 
+/* Ajusta el ancho de tus elementos a 266 píxeles */
+/* Estilos específicos para el ID #miCarrusel */
+#miCarrusel .glide__slide {
+  width: 266px !important;
+}
+
 
 
 @media(min-width: 50px){
@@ -367,9 +373,9 @@ header {
     
    
   }
-   .glide__slides {
-    gap: 1.5rem;
-  }
+   /* .glide__slides {
+    
+  } */
 }
 
 @media(min-width: 520px){
@@ -382,9 +388,11 @@ header {
     
   }
   .glide__slides {
-    margin-left: -200px;
+    margin-left: 0;
   }
-} 
+}
+  
+
 
 
 

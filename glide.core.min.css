@@ -11,7 +11,7 @@
 }
 .glide__slides {
   position: relative;
-  width: 100%;
+  width: 270px;
   list-style: none;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -27,6 +27,7 @@
   align-items: center;
   min-width: 254px;
   max-width: 254px;
+  
 }
 .glide__slides--dragging {
   user-select: none;

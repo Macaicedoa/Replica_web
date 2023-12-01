@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
       2100: { perView: 7 },
       1800: { perView: 6 },
       1500: { perView: 5 },
-      1300: { perView: 4 },
+      1300: { perView: 4.7 },
       1000: { perView: 3 },
-      850:  { perView: 2 },
+      850:  { perView: 2.9 },
       550:  { perView: 1 },
-      450:  { perView: 1 }
+      450:  { perView: 1.3}
     }
   });
 

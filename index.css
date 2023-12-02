@@ -148,11 +148,15 @@ svg:hover{
   background-color: rgba(102, 102, 102, 0.4);
   width: auto;
   height: 195px;
+  
   /* Centra horizontalmente los botones con respecto a las imágenes */
+  
   position: absolute;
-  top: 50%; /* Coloca los botones en la mitad superior de la imagen */
-  transform: translateY(-50%); /* Alinea verticalmente los botones en el centro */
+  
+  top: 50%;  /* Coloca los botones en la mitad superior de la imagen */
+   transform: translateY(-50%);   /* Alinea verticalmente los botones en el centro */
   /* Agrega espacio alrededor de los botones */
+  
   padding: 2px;
   border-radius: 7px;
 }
@@ -166,15 +170,14 @@ svg:hover{
 }
 
 /* Estilo para .glider-prev y .glider-next cuando se pasa el ratón por encima */
+
 .glider-prev:hover,
 .glider-next:hover {
-  background-color: #5a5959; /* Fondo ligeramente menos transparente al pasar el ratón */
+  background-color: #5a5959;   /* Fondo ligeramente menos transparente al pasar el ratón */
  opacity: .8;
  transition: .2s;
 
 }
-
-
 
 .hrFeatured{
   width: 800px;
@@ -280,7 +283,6 @@ svg:hover{
   padding-left: 2px;
 }
 
-
 .card:hover {
   cursor: pointer;
   z-index: 2;
@@ -293,7 +295,11 @@ svg:hover{
   filter: brightness(.7);
   
 }
+
 /*Rafa*/
+*{
+  margin:0;
+}
 button:disabled{
   visibility: hidden;
  }
@@ -392,7 +398,7 @@ button:disabled{
      margin-left: 20px;
      margin-right: 20px;
      margin-bottom: 5px;
-     font-weight: bold;
+     font-size: 90%;
      color:rgb(72,72,72);
      height: fit-content;
  }
@@ -412,7 +418,7 @@ button:disabled{
      color:rgb(114,114,114);
      align-items: left;
      margin-left: 20px;
-     font-size: 90%;
+     font-size: 70%;
  }
  .bSpace{
      padding-top: 20px;
@@ -421,20 +427,21 @@ button:disabled{
      margin-left: 20px;
      margin-top: 15px;
      margin-bottom: 10px;
-     font-weight: bold;
-     font-family: "museo sans";
+     
+     font-size: 90%;
  }
  .consola{
      margin-left: 20px;
      border-left: 3px solid var(--rojo-nintendo);
      color:rgb(114,114,114);
      padding-left: 8px;
-     font-size: 95%;
+     font-size: 75%;
      width: 120px;
  }
  .like{
      margin-right: 10px;
      margin-bottom: 5px;
+     fill:var(--rojo-nintendo);
      position:relative;
      flex-wrap: wrap;
      align-items: flex-end;

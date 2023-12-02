@@ -398,6 +398,13 @@ header{
 
 .news-button:hover{
   background-color: rgb(172, 1, 16);
+  animation: bounce 500ms ease-in-out 25ms;
+}
+@keyframes bounce {
+  from, to { transform: scale(0.99); }
+  25% { transform: scale(1.045); }
+  50% { transform: scale(1.0064); }
+  75% { transform: scale(1.05); }
 }
 
 .news-button svg{

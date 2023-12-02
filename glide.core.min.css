@@ -11,19 +11,23 @@
 }
 .glide__slides {
   position: relative;
-  width: 100%;
+  width: -50%;
   list-style: none;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   touch-action: pan-Y;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0;
   white-space: nowrap;
   display: flex;
   flex-wrap: nowrap;
   will-change: transform;
   gap: 1rem;
+  height: 350px;
+  align-items: center;
+
 }
+
 .glide__slides--dragging {
   user-select: none;
 }
@@ -95,6 +99,7 @@
   opacity: .7; 
   transition: opacity 150ms ease, border 300ms ease-in-out;
 }
+
 
 
 .glide__arrow--disabled {
@@ -210,6 +215,15 @@
   display: none;
 }
 
+
+/* .glide__arrow--right.hidden {
+  display: none;
+} */
+/* .hidden{
+  display: none;
+} */
+
+
 .glide__bullets {
   position: absolute;
   z-index: 2;
@@ -264,5 +278,5 @@
   max-height: 312px;
   min-width: 254px;
   max-width: 254px;
-   
+  cursor: default
 }

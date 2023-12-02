@@ -518,8 +518,7 @@ button:disabled{
  .text{
      color:var(--rojo-nintendo);
      text-decoration: none;
-     font-size:105%;
-     font-weight:bold;
+     font-size:90%;
      font-family: "museo-sans";
      padding-left: 25px;
      line-height: 30px;
@@ -556,7 +555,7 @@ button:disabled{
  #bFooterText{
      text-align: center;
      margin-top: 30px;
-     font-size: 70%;
+     font-size: 60%;
      display: flex;
      flex-direction: column;
  }
@@ -569,9 +568,8 @@ button:disabled{
  }
  .btext{
      text-decoration: none;
-     font-weight: bold;
      color:rgb(255,255,255);
-     font-size: 80%;
+     font-size: 70%;
  }
  .btext:hover{
      text-decoration: underline;

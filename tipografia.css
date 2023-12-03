@@ -152,6 +152,10 @@ button{
   font-size: 1.75rem;
 }
 
+.Headingstyles h2{
+  font-size: 1.125rem;
+}
+
 .news-article{
   color: var(--color-font);
   text-decoration: none;
@@ -208,5 +212,9 @@ button{
 
   .characters-grid h3{
     font-size: 1.3125rem;
+  }
+
+  .Headingstyles h2{
+    font-size: 1.75rem;
   }
 }

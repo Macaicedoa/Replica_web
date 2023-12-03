@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var glide;
+
   function initializeGlider() {
     glide = new Glide('.glide', {
       type: 'slider',
@@ -100,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var prevButton = document.querySelector('.glide__arrow--left');
     if (prevButton) {
       prevButton.classList.add('hidden');
-
     }
 
     glide.mount();

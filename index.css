@@ -1702,7 +1702,6 @@ button:disabled{
      text-decoration: none;
      padding-left: 25px;
      font-size: large;
-     white-space: nowrap;
      display: inline-flex;
  }
  .headline:hover{

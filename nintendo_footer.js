@@ -20,7 +20,7 @@
 };
 const sliders = document.querySelectorAll('.glide');
 
-for (var i = 0; i < sliders.length; i++) {
+for (var i = 1; i < sliders.length; i++) {
   function DisableControls(Glide, Components, Events) {
     const PREV_CONTROL_SELECTOR = "[data-glide-dir='|<']";
     const NEXT_CONTROL_SELECTOR = "[data-glide-dir='|>']";

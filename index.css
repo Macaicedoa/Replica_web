@@ -1515,18 +1515,15 @@ button:disabled{
      overflow: hidden;
  }
  .bestSellers{
- margin-left: 10px;
- padding-top: 35px;
- display: flex;
- flex-direction: row;
- align-items: center;
- align-self: center;
- align-content: center;
+    margin-left: 10px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
  }
  #BestSellerTitle{
      color:rgb(72,72,72);
      font-weight: bold;
-     font-size: 175%;
+     font-size: 1.25rem;
      height: 40px;
      
  }
@@ -1534,13 +1531,8 @@ button:disabled{
      color:var(--rojo-nintendo);
      font-weight: bold;
      height: 40px;
-     font-size: 110%;
-     padding-top: 10px;
-     margin-left: 15px;
-     padding-left: 15px;
-     border-left: var(--gris-linea-separacion);
- 
  }
+
  .fList:hover{
      transition-delay: 350ms;
      color: rgb(172,0, 13);
@@ -1841,6 +1833,34 @@ button:disabled{
      width: 100%;
      height: 100%;
  }
+
+ @media (min-width: 429px) {
+  .fList{
+    font-size: 100%;
+    margin: auto 15px auto 15px;
+    padding-left: 15px;
+    border-left: var(--gris-linea-separacion);
+    align-items: center;
+    display: flex;
+  }
+  .bestSellers{
+    margin-left: 10px;
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+ }
+ #BestSellerTitle{
+  color:rgb(72,72,72);
+  font-weight: bold;
+  font-size: 1.75rem;
+  height: 40px;
+  
+}
+ }
+
  @media (min-width: 768px) {
  
      

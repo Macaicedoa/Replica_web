@@ -522,7 +522,7 @@ button:disabled{
      text-decoration: underline;
      text-decoration-thickness: 1.5px;
      text-decoration-color: rgb(172, 1, 16);
-     
+      
  }
  .text{
      color:var(--rojo-nintendo);

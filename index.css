@@ -1832,6 +1832,11 @@ button:disabled{
      height: 100%;
  }
 
+ .glide__arrow--disabled{
+  display: none;
+ }
+
+
  @media (min-width: 429px) {
   .fList{
     font-size: 100%;

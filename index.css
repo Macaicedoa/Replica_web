@@ -1790,12 +1790,6 @@ user-select: auto;
     border-color: var(--rojo-nintendo);
     transform: scale(1);
 }
-.button-preview svg,
-.button-pause svg,
-.button-next svg {
-
-    /* ajuste mas adelante de los svgs */
-}
 
 .barra-progreso:hover{
   border-radius: 1rem;

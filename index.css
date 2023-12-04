@@ -1590,7 +1590,6 @@ header{
   padding-right: 0px;
   padding-top: 0px;
   width: 100%;
-  font-size: 1.75rem;
   font-weight: 700;
   letter-spacing: normal;
   line-height: 37.8px;
@@ -1603,7 +1602,7 @@ header{
   margin-inline-start: 0px;
   pointer-events: auto;
   user-select: auto;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   word-break: break-word;
   justify-content: center;
@@ -2432,4 +2431,70 @@ button:disabled{
          margin-top: 0px;
          margin-left: 90px;
      }
+  }
+
+  .gaming-systems{
+    position: relative;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    scroll-margin-top: 120px;
+    border-top: var(--gris-linea-separacion);
+  }
+
+  .gaming-systems-container{
+    max-width: 71.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gaming-systems-image{
+    border-radius: var(--border-radius);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .gaming-systems-image img{
+    display: block;
+    min-height: 1px;
+    width: 100%;
+  }
+
+  .gaming-systems-boton{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .button-explore{
+    width: 100%;
+  }
+
+  @media (min-width: 1025px) {
+    .gaming-systems-boton{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center;
+    }
+    .button-explore{
+      width: fit-content;
+    }
+  }
+  @media (min-width: 768px) {
+    .gaming-systems{
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    .gaming-systems-container{
+      width: 96%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }

@@ -295,7 +295,6 @@ header{
   transition: all 200ms ease-in-out 25ms;
 }
 
-
 .news-article-text{
   width: 100%;
   padding-top: 1rem;
@@ -1504,7 +1503,6 @@ header{
     align-items: center;
     justify-content: center;
     height: 78px;
-    
     max-width: 1440px;
     width: 96%;
     font-size: 16px;
@@ -1513,7 +1511,7 @@ header{
     color: rgb(72, 72, 72);
     pointer-events: auto;
     user-select: auto;
-    margin: 30px auto;
+    margin: 1rem auto;
 }
 
 .container-grid-style {
@@ -1782,6 +1780,19 @@ user-select: auto;
     transform: scale(.9);
     
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.button-preview span{
+  display: flex;
+    align-items: center;
+}
+.button-pause span{
+  display: flex;
+    align-items: center;
+}
+.button-next span{
+  display: flex;
+    align-items: center;
 }
 .button-preview:hover,
 .button-pause:hover,

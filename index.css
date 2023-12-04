@@ -1299,21 +1299,16 @@ header{
 
 .h2_featured{
   display: flex;
-
-  
   left: auto;
   margin-right: auto;
- 
   position: relative;
-
   border-width: 0.0625rem 0px 0px;
   border-top-style: solid;
   border-top-color: rgb(218, 218, 218);
   margin-top: .5rem;
   padding-top: 1rem;
   position: relative;
-  width:70%;
-
+  width:92%;
   margin: 0;
 }
 

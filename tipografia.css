@@ -237,6 +237,13 @@ button{
   #MNS h2{
     font-size: 1.75rem;
   }
+
+  #mnsButton {
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+  }
 }
 
 @media (min-width: 768px){

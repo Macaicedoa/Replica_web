@@ -152,7 +152,15 @@ button{
   font-size: 1.75rem;
 }
 
-.Headingstyles h2{
+.Headingstyles{
+  font-size: 1.125rem;
+}
+
+.gaming-systems h2{
+  font-size: 1.3125rem;
+}
+
+.gaming-systems h3{
   font-size: 1.125rem;
 }
 
@@ -214,7 +222,17 @@ button{
     font-size: 1.3125rem;
   }
 
-  .Headingstyles h2{
+  .Headingstyles{
     font-size: 1.75rem;
+  }
+
+  .gaming-systems h2{
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 768px){
+  .gaming-systems h3{
+    font-size: 1.3125rem;
   }
 }

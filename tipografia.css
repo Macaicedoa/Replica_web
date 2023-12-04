@@ -164,6 +164,10 @@ button{
   font-size: 1.125rem;
 }
 
+#MNS h2{
+  font-size: 1.3125rem;
+}
+
 .news-article{
   color: var(--color-font);
   text-decoration: none;
@@ -229,10 +233,15 @@ button{
   .gaming-systems h2{
     font-size: 1.75rem;
   }
+
+  #MNS h2{
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 768px){
   .gaming-systems h3{
     font-size: 1.3125rem;
   }
+
 }

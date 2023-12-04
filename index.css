@@ -2590,7 +2590,7 @@ button:disabled{
     margin: 0 auto;
   }
   .mnsImg {
-    height: 200px;
+    height: auto;
     margin: 40px auto;
     display: block;
 }

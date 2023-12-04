@@ -1893,14 +1893,9 @@ transform: scale(1.1);
     
     min-width: calc((100% - 1.2rem) /1.1);
     max-width: calc((100% - 1.2rem) /1.2);
-    min-height: 260px;
-    max-height: 260px;
-    
-   
+    min-height: 312px;
+    min-width: 254px;
   }
-   /* .glide__slides {
-    
-  } */
 }
 
 

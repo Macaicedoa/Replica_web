@@ -1731,12 +1731,12 @@ user-select: auto;
 -webkit-box-align: center;
 -webkit-box-pack: center;
 }
-.Buttonstyles_background:hover {
+/* .Buttonstyles_background:hover {
   background-color: rgb(172, 0, 13);
   border-color: rgb(172, 0, 13);
   animation: bounce 0.3s ease-in-out;
   transform: scale(1.1);
-}
+} */
 
 .container-botones{
   display: flex;
@@ -1823,8 +1823,8 @@ user-select: auto;
 .Buttonstyles_background:hover {
 background-color: rgb(172, 0, 13);
 border-color: rgb(172, 0, 13);
-animation: bounce 0.3s ease-in-out;
-transform: scale(1.1);
+animation: jump 500ms ease-in-out 25ms;
+/*transform: scale(1.1);*/
 }
 
 

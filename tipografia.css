@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "museo-sans-700";
+  src: url(museo-sans/MuseoSans_700.ttf);
+}
+@font-face {
+  font-family: "museo-sans-300";
+  src: url(museo-sans/MuseoSans-300.ttf);
+}
+
+:root{
+  --nintendo-font:"museo-sans-700", -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-font: rgb(72, 72, 72);
+  --font-weight-nintendo: 700;
+  --font-size-text: 0.875rem;
+  --line-text: 1.4;
+}
+
+body{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  line-height: var(--line-text);
+}
+
+.link{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+svg{
+  fill: var(--color-font);
+}
+
+h2{
+  font-size: var(--font-size-text);
+  margin: 0;
+  align-self: flex-start;
+ }
+
+.search-form input{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-size: var(--font-size-text);
+}
+
+.search-form input,input::placeholder{
+  font-family: "museo-sans-300";
+}
+.select{
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+.options{
+  font-family: "museo-sans-700";
+  color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+  line-height: var(--line-text);
+  font-size: smaller;
+}
+
+.div-search-input-bar button svg{
+  fill: var(--color-font);
+}
+
+.search-top-store h2{
+  font-size: 1rem;
+}
+
+.search-top-store-products div div h2{
+  font-size: var(--font-size-text);
+}
+
+.search-top-store-products div div div span{
+  font-family: "museo-sans-300";
+  font-size: var(--font-size-text);
+}
+
+.nav-buttons button{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+.link{
+  font-family: var(--nintendo-font);
+  color: var(--color-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+svg{
+  fill: var(--color-font);
+}
+
+.search-form input{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+}
+
+.search-form select option{
+  font-family: var(--nintendo-font);
+  color: var(--nintendo-font);
+  font-weight: var(--font-weight-nintendo);
+  font-size: var(--font-size-text);
+}
+
+.trendin-topics-links div a{
+  line-height: var(--line-text);
+}
+
+.dropdown-store-title a{
+  font-size: 16px;
+}
+
+.store-elements div a{
+  color: var(--color-font);
+}
+
+.store-elements div p{
+  font-size: var(--font-size-text);
+  font-family: "museo-sans-300";
+  line-height: normal;
+  margin: 10px 0;
+}
+
+.shop-all{
+  font-size: 1.125rem;
+  font-family: "museo-sans-700";
+}
+
+.options-links{
+  color: var(--color-font);
+  text-decoration: none;
+  font-family: "museo-sans-300";
+  font-size: var(--font-size-text);
+  line-height: normal;
+}
+
+button{
+  line-height: 1;
+  font-size: 100%;
+}
+
+.h2_featured{
+  font-size: 1.75rem;
+}
+.news h2{
+  font-size: 1.75rem;
+}
+
+.Headingstyles{
+  font-size: 1.125rem;
+}
+
+.gaming-systems h2{
+  font-size: 1.3125rem;
+}
+
+.gaming-systems h3{
+  font-size: 1.125rem;
+}
+
+#MNS h2{
+  font-size: 1.3125rem;
+}
+
+.news-article{
+  color: var(--color-font);
+  text-decoration: none;
+  font-family: "museo-sans-300";
+  font-size: var(--font-size-text);
+  line-height: var(--line-text);
+}
+
+.news-article-text p{
+  font-size: 0.875rem;
+  font-family: "museo-sans-300";
+
+}
+
+.news-article-text h3{
+  font-size: 1rem;
+  font-family: "museo-sans-700";
+
+}
+
+.news-article-text span{
+  font-size: 0.875rem;
+  font-family: "museo-sans-700";
+}
+
+.characters-grid h2{
+  margin-block: 0px;
+  line-height: 1.35;
+  font-size: 1.3125rem;
+}
+
+.characters-grid h3{
+  margin: 0;
+  padding: 0;
+  margin-block: 0px;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 429px) {
+  .news-article-text p{
+    font-size: 1rem;
+  }
+  .news-article-text h3{
+    font-size: 1.125rem;
+    margin: 0px;
+  }
+  .news-article-text span{
+    font-size: 1rem;
+  }
+
+  .characters-grid h2{
+    font-size: 1.75rem;
+  }
+
+  .characters-grid h3{
+    font-size: 1.3125rem;
+  }
+
+  .Headingstyles{
+    font-size: 1.75rem;
+  }
+
+  .gaming-systems h2{
+    font-size: 1.75rem;
+  }
+
+  #MNS h2{
+    font-size: 1.75rem;
+  }
+
+  #mnsButton {
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px){
+  .gaming-systems h3{
+    font-size: 1.3125rem;
+  }
+
+}

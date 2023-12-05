@@ -397,9 +397,9 @@ header{
 
 .news-button:hover{
   background-color: rgb(172, 1, 16);
-  animation: bounce 500ms ease-in-out 25ms;
+  animation: jump 500ms ease-in-out 25ms;
 }
-@keyframes bounce {
+@keyframes jump {
   from, to { transform: scale(0.99); }
   25% { transform: scale(1.045); }
   50% { transform: scale(1.0064); }
@@ -1040,13 +1040,13 @@ header{
   .shop-all:hover{
     background-color: rgba(230,0,18,0.1);
     box-shadow: 0 1px 1px rgba(230,0,18, 0.2);
-    animation-name: jump;
+    animation-name: jump2;
     animation-duration: 0.2s;
     animation-iteration-count: 2;
     animation-timing-function: linear;
   }
 
-  @keyframes jump {
+  @keyframes jump2 {
     50% {
         padding: 10px 1.6rem;
         box-shadow: 1px 2px 3px 1px rgba(230,0,18, 0.2);
@@ -2549,9 +2549,9 @@ button:disabled{
   }
   #mnsButton:hover{
     background-color: rgb(172, 1, 16);
-    animation: bounce 500ms ease-in-out 25ms;
+    animation: jump 500ms ease-in-out 25ms;
   }
-  @keyframes bounce {
+  @keyframes jump {
     from, to { transform: scale(0.99); }
     25% { transform: scale(1.045); }
     50% { transform: scale(1.0064); }

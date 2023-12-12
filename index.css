@@ -1454,6 +1454,18 @@ header{
   width: 266px !important;
 }
 
+#separator{
+  display: none;
+}
+
+@media(min-width: 1025px){
+  #separator{
+    display: flex;
+    width: 100%;
+    height: 100px;
+  }
+}
+
 /* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeedi */
 
 .container-Preview {
@@ -1465,7 +1477,6 @@ header{
   transition: height 300ms ease-in-out;
   will-change: height;
   user-select: none;
- margin-top: 104px;
   
 }
 
@@ -1474,7 +1485,7 @@ header{
   width: 100%;
   background-attachment: fixed;
   background-repeat: repeat;
-  height: calc(100% - 28rem);
+  height: calc(100% - 50vh);
  
   position: absolute;
   z-index: -1;

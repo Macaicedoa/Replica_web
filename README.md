@@ -1,5 +1,7 @@
 # Réplica de la Landing Page de Nintendo
 
+https://macaicedoa.github.io/Replica_web/
+
 Este proyecto es una réplica de la landing page oficial de Nintendo, diseñada con el objetivo de practicar habilidades de desarrollo web y mejorar el conocimiento en HTML, CSS y JavaScript.
 
 ## Descripción
